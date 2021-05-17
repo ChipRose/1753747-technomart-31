@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Яна Розова](https://up.htmlacademy.ru/htmlcss/31/user/1753747).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Минаев](https://htmlacademy.ru/profile/mtvkand).
 
 ---
 
