@@ -6,6 +6,6 @@
 	"singleQuote": true,
 	"useTabs": true,
 	"endOfLine": "crlf",
-	"jsxBracketSameLine": true,
+	"jsxBracketSameLine": false,
 	"proseWrap": "always"
 	}
