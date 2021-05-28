@@ -1,0 +1,10 @@
+/* Variables for color */
+
+:root {
+  --basic-dark-blue: rgb(41, 52, 73);
+  --basic-light-blue: rgb(241, 245, 247);
+  --basic-white: rgb(255, 255, 255);
+  --button-red: rgb(238, 54, 67);
+  --button-inner-shadow: rgba(0, 0, 0, 0, 24);
+  --button-active: rgb(186, 39, 50);
+}
