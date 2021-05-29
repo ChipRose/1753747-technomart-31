@@ -2,17 +2,167 @@
 
 :root {
   --basic-dark-blue: rgb(41, 52, 73);
-	--shadow-dark-blue:rgba(41, 52, 73);
-	--hover-dark-blue:rgb(29, 39, 57);
+  --shadow-dark-blue: rgba(41, 52, 73);
+  --hover-dark-blue: rgb(29, 39, 57);
+  --basic-deep-dark-blue: rgb(50, 66, 92);
+  --basic-menu-inner-shadow: rgb(41, 52, 73);
+  --active-transparent-deep-bark-blue: rgba(50, 66, 92, 0.5);
   --basic-background: rgb(241, 245, 247);
   --basic-white: rgb(255, 255, 255);
-	--hover-greylight: rgb(197, 197, 197);
-
+  --active-white: rgb(255, 255, 255, 0.5);
+  --hover-transparent-greylight: rgba(197, 197, 197, 0.3);
+  --active-transparent-grey: rgba(169, 169, 169, 0.3);
+  --basic-icon-grey: rgb(183, 191, 200);
   --basic-black: rgb(0, 0, 0);
-	--special-yellow: rgb(255, 191, 71);
+  --basic-background-black: rgba(0, 0, 0, 0.0001);
+  --hover-grey-shadow: rgba(0, 0, 0, 0.15);
+  --special-yellow: rgb(255, 191, 71);
   --basic-red: rgb(238, 54, 67);
-	--hover-red: rgb(202, 44, 55);
-	--active-red:rgb(186, 39, 50);
-  --button-inner-shadow: rgba(0, 0, 0, 0, 24);
+  --hover-red: rgb(202, 44, 55);
+  --active-red: rgb(186, 39, 50);
+  --basic-button-inner-shadow: rgba(0, 0, 0, 0.24);
   --button-active: rgb(186, 39, 50);
+  --basic-green: rgb(95, 187, 45);
+  --active-green: rgb(99, 166, 62);
+}
+.page-body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background: var(--basic-white);
+}
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+.page-body a {
+  text-decoration: none;
+}
+.main-header svg {
+  max-width: 100%;
+}
+.navigation-menu__list {
+  list-style: none;
+}
+.main-header {
+  font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background: var(--basic-background);
+}
+.top-menu {
+  color: var(--basic-white);
+  background: var(--basic-dark-blue);
+}
+.top-menu a {
+  color: inherit;
+}
+.logo__icon {
+  fill: var(--basic-white);
+}
+.logo {
+  text-align: center;
+  vertical-align: middle;
+  background: var(--basic-red);
+  box-shadow: 0px -5px 0px 0px var(--basic-button-inner-shadow) inset;
+}
+.logo:hover {
+  background: var(--basic-red);
+}
+.logo:active {
+  background: var(--hover-red);
+}
+.search {
+  border-width: 0;
+  margin: inherit;
+  padding: inherit;
+}
+input[type="search"] {
+  background: var(--basic-dark-blue);
+}
+input[type="search"]:focus {
+  background: var(--basic-white);
+}
+.top-user-menu--favorites:before {
+  content: url("/img/icon/icon-bookmark.svg");
+  opacity: 0.3;
+}
+.top-user-menu--cart:before {
+  content: url("/img/icon/icon-cart.svg");
+  opacity: 0.3;
+}
+.top-user-menu--favorites:hover::before,
+.top-user-menu--cart:hover::before {
+  opacity: 1;
+}
+.top-user-menu:active {
+  background: var(--hover-dark-blue);
+  opacity: 0.5;
+}
+.ordered-button {
+  text-align: center;
+  vertical-align: middle;
+  background: var(--basic-green);
+}
+.ordered-button:active {
+  background: var(--active-green);
+  color: var(--active-white);
+}
+.middle-menu {
+  color: var(--basic-black);
+}
+.middle-menu-row {
+  display: flex;
+}
+.middle-menu__title {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+  font-style: italic;
+}
+.middle-menu__address {
+  text-align: center;
+}
+.middle-menu__phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-red);
+}
+.middle-menu__phone--img:before {
+  content: url("/img/icon/icon-phone.svg");
+}
+.middle-menu__address span {
+  font-size: 14px;
+  line-height: 24px;
+}
+.middle-menu__button {
+  color: var(--basic-black);
+}
+.middle-menu__button--login:before {
+  content: url("/img/icon/icon-login.svg");
+}
+.middle-menu__button--login:hover::before {
+  content: url("/img/icon/icon-login-hover.svg");
+}
+.middle-menu__button:hover {
+  color: var(--basic-red);
+}
+.navigation-menu__list {
+  display: flex;
+  padding: inherit;
+  justify-content: space-around;
+  background: var(--basic-deep-dark-blue);
+  box-shadow: 0px -5px 0px 0px var(--basic-menu-inner-shadow) inset;
+}
+.navigation-menu__item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
 }

@@ -1,6 +1,6 @@
 {
-"printWidth": 150,
-"bracketSpacing": true,
-"jsxBracketSameLine": true,
-"tabWidth": 2
+  "printWidth": 150,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "tabWidth": 2
 }
