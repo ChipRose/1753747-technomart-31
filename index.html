@@ -19,63 +19,58 @@
     <header class="main-header">
       <div class="top-menu">
         <div class="wrapper">
-          <div class="logo logo--small">
-            <a href="#">
-              <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="top-menu__container">
+            <div class="logo logo--small">
+              <a href="#">
+                <svg width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="logo__icon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M103.847 2.65852V17.4498H101.734V2.65852H97.9779V1.01504H107.604V2.65852H103.847ZM95.7123 11.3572C95.3444 11.819 94.8827 12.1477 94.3271 12.3433C93.7714 12.539 93.1101 12.6368 92.3431 12.6368C91.9831 12.6368 91.5762 12.6133 91.1223 12.5663C90.6684 12.5194 90.2927 12.4646 89.9953 12.402V17.4498H87.8823V1.24983C88.4771 1.07765 89.0758 0.956348 89.6784 0.885913C90.281 0.815478 90.9344 0.780261 91.6388 0.780261C92.5779 0.780261 93.3762 0.878087 94.0336 1.07374C94.691 1.26939 95.2231 1.59417 95.6301 2.04809C96.0371 2.502 96.3344 3.10461 96.5223 3.85591C96.7101 4.60722 96.804 5.53852 96.804 6.64983C96.804 7.79243 96.714 8.74722 96.534 9.51417C96.354 10.2811 96.0801 10.8955 95.7123 11.3572ZM94.5149 4.53678C94.3975 3.9733 94.2136 3.52722 93.9631 3.19852C93.7127 2.86983 93.3957 2.63896 93.0123 2.50591C92.6288 2.37287 92.171 2.30635 91.6388 2.30635H89.9953V10.9933H91.6388C92.171 10.9933 92.6288 10.9268 93.0123 10.7937C93.3957 10.6607 93.7127 10.4298 93.9631 10.1011C94.2136 9.77244 94.3975 9.32635 94.5149 8.76287C94.6323 8.19939 94.691 7.49504 94.691 6.64983C94.691 5.80461 94.6323 5.10026 94.5149 4.53678ZM82.5997 13.2237H77.904L76.8475 17.4498H74.7344L78.7257 1.01504H81.7779L85.7692 17.4498H83.6562L82.5997 13.2237ZM80.2988 3.36287H80.2049L78.2562 11.5803H82.2475L80.2988 3.36287ZM70.1562 5.24113H70.0388L66.6344 15.3368H64.5214L61.1171 5.24113H60.9997L60.2953 17.4498H58.1823L59.1214 1.01504H61.704L65.531 12.2846H65.6249L69.4518 1.01504H72.0344L72.9736 17.4498H70.8605L70.1562 5.24113ZM54.3788 15.9237C53.9405 16.5655 53.4123 17.0194 52.794 17.2855C52.1757 17.5516 51.4675 17.6846 50.6692 17.6846C49.871 17.6846 49.1627 17.5516 48.5444 17.2855C47.9262 17.0194 47.3979 16.5655 46.9597 15.9237C46.5214 15.282 46.1888 14.4172 45.9618 13.3294C45.7349 12.2416 45.6214 10.8759 45.6214 9.23244C45.6214 7.58896 45.7349 6.2233 45.9618 5.13548C46.1888 4.04765 46.5214 3.18287 46.9597 2.54113C47.3979 1.89939 47.9262 1.44548 48.5444 1.17939C49.1627 0.913305 49.871 0.780261 50.6692 0.780261C51.4675 0.780261 52.1757 0.913305 52.794 1.17939C53.4123 1.44548 53.9405 1.89939 54.3788 2.54113C54.8171 3.18287 55.1497 4.04765 55.3766 5.13548C55.6036 6.2233 55.7171 7.58896 55.7171 9.23244C55.7171 10.8759 55.6036 12.2416 55.3766 13.3294C55.1497 14.4172 54.8171 15.282 54.3788 15.9237ZM53.3575 5.75765C53.1931 4.84983 52.9779 4.12983 52.7118 3.59765C52.4457 3.06548 52.1327 2.69765 51.7727 2.49417C51.4127 2.2907 51.0449 2.18896 50.6692 2.18896C50.2936 2.18896 49.9257 2.2907 49.5657 2.49417C49.2057 2.69765 48.8927 3.06548 48.6266 3.59765C48.3605 4.12983 48.1453 4.84983 47.981 5.75765C47.8166 6.66548 47.7344 7.82374 47.7344 9.23244C47.7344 10.6411 47.8166 11.7994 47.981 12.7072C48.1453 13.615 48.3605 14.335 48.6266 14.8672C48.8927 15.3994 49.2057 15.7672 49.5657 15.9707C49.9257 16.1742 50.2936 16.2759 50.6692 16.2759C51.0449 16.2759 51.4127 16.1742 51.7727 15.9707C52.1327 15.7672 52.4457 15.3994 52.7118 14.8672C52.9779 14.335 53.1931 13.615 53.3575 12.7072C53.5218 11.7994 53.604 10.6411 53.604 9.23244C53.604 7.82374 53.5218 6.66548 53.3575 5.75765ZM40.691 9.93678H35.7605V17.4498H33.6475V1.01504H35.7605V8.2933H40.691V1.01504H42.804V17.4498H40.691V9.93678ZM29.5396 17.4498L26.6048 10.4063L23.67 17.4498H21.557L25.0787 8.99765L21.9091 1.01504H24.0222L26.6048 7.58896L29.1874 1.01504H31.3004L28.1309 8.99765L31.6526 17.4498H29.5396ZM12.283 1.01504H20.2657V2.65852H14.3961V8.05852H19.5613V9.702H14.3961V15.8063H20.2657V17.4498H12.283V1.01504ZM6.64827 17.4498H4.53522V2.65852H0.778702V1.01504H10.4048V2.65852H6.64827V17.4498Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <form class="search-form" action="#" method="get">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
                 <path
-                  class="logo__icon"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M103.847 2.65852V17.4498H101.734V2.65852H97.9779V1.01504H107.604V2.65852H103.847ZM95.7123 11.3572C95.3444 11.819 94.8827 12.1477 94.3271 12.3433C93.7714 12.539 93.1101 12.6368 92.3431 12.6368C91.9831 12.6368 91.5762 12.6133 91.1223 12.5663C90.6684 12.5194 90.2927 12.4646 89.9953 12.402V17.4498H87.8823V1.24983C88.4771 1.07765 89.0758 0.956348 89.6784 0.885913C90.281 0.815478 90.9344 0.780261 91.6388 0.780261C92.5779 0.780261 93.3762 0.878087 94.0336 1.07374C94.691 1.26939 95.2231 1.59417 95.6301 2.04809C96.0371 2.502 96.3344 3.10461 96.5223 3.85591C96.7101 4.60722 96.804 5.53852 96.804 6.64983C96.804 7.79243 96.714 8.74722 96.534 9.51417C96.354 10.2811 96.0801 10.8955 95.7123 11.3572ZM94.5149 4.53678C94.3975 3.9733 94.2136 3.52722 93.9631 3.19852C93.7127 2.86983 93.3957 2.63896 93.0123 2.50591C92.6288 2.37287 92.171 2.30635 91.6388 2.30635H89.9953V10.9933H91.6388C92.171 10.9933 92.6288 10.9268 93.0123 10.7937C93.3957 10.6607 93.7127 10.4298 93.9631 10.1011C94.2136 9.77244 94.3975 9.32635 94.5149 8.76287C94.6323 8.19939 94.691 7.49504 94.691 6.64983C94.691 5.80461 94.6323 5.10026 94.5149 4.53678ZM82.5997 13.2237H77.904L76.8475 17.4498H74.7344L78.7257 1.01504H81.7779L85.7692 17.4498H83.6562L82.5997 13.2237ZM80.2988 3.36287H80.2049L78.2562 11.5803H82.2475L80.2988 3.36287ZM70.1562 5.24113H70.0388L66.6344 15.3368H64.5214L61.1171 5.24113H60.9997L60.2953 17.4498H58.1823L59.1214 1.01504H61.704L65.531 12.2846H65.6249L69.4518 1.01504H72.0344L72.9736 17.4498H70.8605L70.1562 5.24113ZM54.3788 15.9237C53.9405 16.5655 53.4123 17.0194 52.794 17.2855C52.1757 17.5516 51.4675 17.6846 50.6692 17.6846C49.871 17.6846 49.1627 17.5516 48.5444 17.2855C47.9262 17.0194 47.3979 16.5655 46.9597 15.9237C46.5214 15.282 46.1888 14.4172 45.9618 13.3294C45.7349 12.2416 45.6214 10.8759 45.6214 9.23244C45.6214 7.58896 45.7349 6.2233 45.9618 5.13548C46.1888 4.04765 46.5214 3.18287 46.9597 2.54113C47.3979 1.89939 47.9262 1.44548 48.5444 1.17939C49.1627 0.913305 49.871 0.780261 50.6692 0.780261C51.4675 0.780261 52.1757 0.913305 52.794 1.17939C53.4123 1.44548 53.9405 1.89939 54.3788 2.54113C54.8171 3.18287 55.1497 4.04765 55.3766 5.13548C55.6036 6.2233 55.7171 7.58896 55.7171 9.23244C55.7171 10.8759 55.6036 12.2416 55.3766 13.3294C55.1497 14.4172 54.8171 15.282 54.3788 15.9237ZM53.3575 5.75765C53.1931 4.84983 52.9779 4.12983 52.7118 3.59765C52.4457 3.06548 52.1327 2.69765 51.7727 2.49417C51.4127 2.2907 51.0449 2.18896 50.6692 2.18896C50.2936 2.18896 49.9257 2.2907 49.5657 2.49417C49.2057 2.69765 48.8927 3.06548 48.6266 3.59765C48.3605 4.12983 48.1453 4.84983 47.981 5.75765C47.8166 6.66548 47.7344 7.82374 47.7344 9.23244C47.7344 10.6411 47.8166 11.7994 47.981 12.7072C48.1453 13.615 48.3605 14.335 48.6266 14.8672C48.8927 15.3994 49.2057 15.7672 49.5657 15.9707C49.9257 16.1742 50.2936 16.2759 50.6692 16.2759C51.0449 16.2759 51.4127 16.1742 51.7727 15.9707C52.1327 15.7672 52.4457 15.3994 52.7118 14.8672C52.9779 14.335 53.1931 13.615 53.3575 12.7072C53.5218 11.7994 53.604 10.6411 53.604 9.23244C53.604 7.82374 53.5218 6.66548 53.3575 5.75765ZM40.691 9.93678H35.7605V17.4498H33.6475V1.01504H35.7605V8.2933H40.691V1.01504H42.804V17.4498H40.691V9.93678ZM29.5396 17.4498L26.6048 10.4063L23.67 17.4498H21.557L25.0787 8.99765L21.9091 1.01504H24.0222L26.6048 7.58896L29.1874 1.01504H31.3004L28.1309 8.99765L31.6526 17.4498H29.5396ZM12.283 1.01504H20.2657V2.65852H14.3961V8.05852H19.5613V9.702H14.3961V15.8063H20.2657V17.4498H12.283V1.01504ZM6.64827 17.4498H4.53522V2.65852H0.778702V1.01504H10.4048V2.65852H6.64827V17.4498Z"
-                />
-              </svg>
-            </a>
-          </div>
-          <form class="search-form" action="#" method="get">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
-              <path
-                class="icon opacity"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
-              />
-            </svg>
-            <label class="search-form__label" for="search"
-              >Найти на сайте:
-              <svg class="user-menu__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                  class="icon opacity"
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 />
               </svg>
-            </label>
-            <input class="search" type="search" name="search" id="search" placeholder="Поиск:" />
-          </form>
-          <a class="top-user-menu top-user-menu--favorites" href="#">
-            <svg class="user-menu__icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z"
-              />
-            </svg>
-            Закладки: 0
-          </a>
-          <a class="top-user-menu top-user-menu--cart" href="#">
-            <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
-              />
-            </svg>
-            Корзина: 0
-          </a>
-          <div class="ordered-button">
-            <a href="#">Оформить заказ</a>
+              <label class="search-form__label" for="search">
+                <span class="visually-hidden">Найти на сайте:</span>
+              </label>
+              <input class="search" type="search" name="search" id="search" placeholder="Поиск:" />
+            </form>
+            <a class="top-user-menu top-user-menu--favorites" href="#">
+              <svg class="user-menu__icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z"
+                />
+              </svg>
+              Закладки: 0
+            </a>
+            <a class="top-user-menu top-user-menu--cart" href="#">
+              <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                />
+              </svg>
+              Корзина: 0
+            </a>
+            <div class="ordered-button">
+              <a href="#">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="middle-menu">
         <div class="wrapper">
-          <div class="middle-menu-row">
+          <div class="middle-menu-container">
             <p class="middle-menu__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="middle-menu__address">
               <a class="middle-menu__phone" href="tel:+78005558628">
@@ -130,10 +125,10 @@
       </nav>
     </header>
     <main class="main">
-      <h1>интернет-магазин "Техномарт"</h1>
+      <h1 class="visually-hidden">интернет-магазин "Техномарт"</h1>
       <section class="advertisement">
         <div class="wrapper">
-          <h2>Реклама</h2>
+          <h2 class="visually-hidden">Реклама</h2>
           <ul class="advertisement__list clear-list">
             <li class="advertisement__item advertisement__item--materials new">
               <h3>Материалы</h3>
@@ -157,6 +152,21 @@
             </li>
           </ul>
           <div class="advertisement__slider">
+            <div class="advertisement__button-container">
+              <button class="advertisement__button-slider advertisement__button-slider--prev clear-button" type="button" disabled>
+                <svg width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" stroke="white" />
+                </svg>
+              </button>
+              <button class="advertisement__button-slider advertisement__button-slider--next clear-button" type="button">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.07562 39.0585L0.0774441 37.0107L17.093 19.5639L0.021965 2.06243L2.0211 0.0146294L21.0894 19.5639L2.07562 39.0585Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
             <div class="advertisement__img">
               <div class="advertisement__text">
                 <h3>Перфораторы</h3>
@@ -177,19 +187,6 @@
               <li><a href="#"></a></li>
               <li><a href="#"></a></li>
             </ul>
-            <button class="advertisement__button-slider advertisement__button-slider--prev clear-button" type="button" disabled>
-              <svg width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" stroke="white" />
-              </svg>
-            </button>
-            <button class="advertisement__button-slider advertisement__button-slider--next clear-button" type="button">
-              <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.07562 39.0585L0.0774441 37.0107L17.093 19.5639L0.021965 2.06243L2.0211 0.0146294L21.0894 19.5639L2.07562 39.0585Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </section>
@@ -339,7 +336,7 @@
           <div class="services__products">
             <ul class="services-button__list clear-list">
               <li class="services-button__item">
-                <input class="services-radio" type="radio" name="service" id="delivery" />
+                <input class="services-radio" checked type="radio" name="service" id="delivery" />
                 <label class="services__button" for="delivery">Доставка</label>
               </li>
               <li class="services-button__item">
@@ -377,7 +374,7 @@
       </section>
       <div class="about-company">
         <div class="wrapper">
-          <div class="about-company__information">
+          <div class="about-company__container">
             <section class="about-company__company-technomart">
               <h2 class="section-title">Компания «Техномарт»</h2>
               <p>
@@ -409,7 +406,7 @@
     <footer class="main-footer">
       <div class="top-footer">
         <div class="wrapper">
-          <div class="footer__navigation">
+          <div class="top-footer__container">
             <a class="logo" href="#">
               <svg class="logo__icon" width="108" height="18" viewBox="0 0 108 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -419,100 +416,85 @@
                 />
               </svg>
             </a>
-            <ul class="top-footer__navigation clear-list">
-              <li class="navigation-menu__item"><a href="blank.html">Компания</a></li>
-              <li class="navigation-menu__item"><a href="blank.html">Новости</a></li>
-              <li class="navigation-menu__item"><a href="catalog.html">Каталог</a></li>
-              <li class="navigation-menu__item"><a href="blank.html">Доставка</a></li>
-              <li class="navigation-menu__item"><a href="blank.html">Контакты</a></li>
+            <ul class="top-footer__navigation-list clear-list">
+              <li class="main-footer__item"><a href="blank.html">Компания</a></li>
+              <li class="main-footer__item"><a href="blank.html">Новости</a></li>
+              <li class="main-footer__item"><a href="catalog.html">Каталог</a></li>
+              <li class="main-footer__item"><a href="blank.html">Доставка</a></li>
+              <li class="main-footer__item"><a href="blank.html">Контакты</a></li>
             </ul>
           </div>
           <div class="top-footer__address-navigation">
             <section class="top-footer__address">
-              <h2>Адрес</h2>
+              <h2 class="visually-hidden">Адрес</h2>
               <p>
                 г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br />
                 <a href="tel:+78005558628">+7 800 555-86-28</a>
               </p>
             </section>
-            <ul class="main-footer__list clear-list">
-              <li class="navigation-menu__item navigation-menu__item--yellow"><a href="blank.html">Материалы</a></li>
-              <li class="navigation-menu__item navigation-menu__item--yellow"><a href="blank.html">Техника</a></li>
-              <li class="navigation-menu__item navigation-menu__item--yellow"><a href="blank.html">Инструмент</a></li>
-              <li class="navigation-menu__item navigation-menu__item--yellow"><a href="blank.html">Спецпредложения</a></li>
+            <ul class="clear-list main-footer__list">
+              <li class="main-footer__item main-footer__item--yellow"><a href="blank.html">Материалы</a></li>
+              <li class="main-footer__item main-footer__item--yellow"><a href="blank.html">Техника</a></li>
+              <li class="main-footer__item main-footer__item--yellow"><a href="blank.html">Инструмент</a></li>
+              <li class="main-footer__item main-footer__item--yellow"><a href="blank.html">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="bottom-footer">
         <div class="wrapper">
-          <h2>Дополнительные контакты</h2>
-          <p>
-            © 2010–2021 Компания «Техномарт»<br />
-            Все права защищены
-          </p>
-          <ul class="clear-list">
-            <li class="social-button">
-              <a href="#">
-                <svg class="social-icon" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg" 
-								viewBox="0 0 44 44" preserveAspectRatio="xMidYMid meet">
-								<circle r="22" cx="22" cy="22" fill=var(--social-button)></circle>
-                  <path
-                    d="M15.54 11.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92C24.58 3.71 25.2 2.48 25 1.95c-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.42c-.25-.17-.59-.22-.59-.22l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z"
-                  />
-                </svg>
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="social-icon" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
-                </svg>
-								<span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="social-icon" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                  />
-                </svg>
-								<span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-          </ul>
-          <p>
-            Обратная связь:
-            <a href="mailto:mail@htmlacademy.ru"></a>
-          </p>
-          <p>
-            Разработано -
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <div class="bottom-footer__container">
+            <h2 class="visually-hidden">Дополнительные контакты</h2>
+            <p>
+              © 2010–2021 Компания «Техномарт»<br />
+              Все права защищены
+            </p>
+            <ul class="clear-list social-button__list">
+              <li class="social-button">
+                <a href="#">
+                  <svg class="social-icon" width="24" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.54 11.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92C24.58 3.71 25.2 2.48 25 1.95c-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.42c-.25-.17-.59-.22-.59-.22l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-button">
+                <a href="#">
+                  <svg class="social-icon" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+                  </svg>
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-button">
+                <a href="#">
+                  <svg class="social-icon" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+            </ul>
+            <p>
+              Обратная связь:<br />
+              <a class="bottom-footer__link bottom-footer__link--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано -<br />
+              <a class="bottom-footer__link bottom-footer__link--yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-    <section>
-      <h2>Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p><label for="form-name">Ваше имя:</label><br /><input type="text" name="form-name" id="form-name" placeholder="Имя Фамилия" /></p>
-        <p>
-          <label for="form-email">Ваш e-mail:</label><br /><input type="email" name="form-email" id="form-email" placeholder="email@example.com" />
-        </p>
-        <p>
-          <label for="form-message">Текст письма:</label><br /><input
-            type="text"
-            name="form-message"
-            id="form-message"
-            placeholder="В свободной форме"
-          />
-        </p>
-        <button class="clear-button" type="submit">Отправить</button>
-      </form>
+    <section class="modal-window modal-window__feed-back">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="clear-button" type="button">
         <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -520,15 +502,42 @@
             fill="red"
           />
         </svg>
-        Закрыть
+        <span class="visually-hidden"> Закрыть</span>
       </button>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label for="feed-back-name">Ваше имя:</label><br />
+          <input class="feed-back-area" type="text" name="feed-back-name" id="feed-back-name" placeholder="Имя Фамилия" />
+        </p>
+        <p>
+          <label for="feed-back-email">Ваш e-mail:</label><br />
+          <input class="feed-back-area" type="email" name="feed-back-email" id="feed-back-email" placeholder="email@example.com" />
+        </p>
+        <p>
+          <label for="feed-back-message">Текст письма:</label><br />
+          <input class="feed-back-area" type="text" name="feed-back-message" id="feed-back-message" placeholder="В свободной форме" />
+        </p>
+        <div class="feed-back__footer">
+          <button class="clear-button button" type="submit">Отправить</button>
+        </div>
+      </form>
     </section>
-    <section>
-      <h2>Как нас найти</h2>
-      <div>
-        <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" />
+    <section class="modal-window modal-window__map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <button class="clear-button" type="button">
+        <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z"
+            fill="red"
+          />
+        </svg>
+        <span class="visually-hidden"> Закрыть</span>
+      </button>
+      <div class="about-company__map">
+        <a href="https://yandex.ru/maps/-/CCU4rKaCGD">
+          <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" />
+        </a>
       </div>
-      <button class="clear-button" type="button">Закрыть</button>
     </section>
   </body>
 </html>
