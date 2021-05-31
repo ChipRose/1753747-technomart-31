@@ -42,8 +42,12 @@
             <label class="search-form__label" for="search"
               >Найти на сайте:
               <svg class="user-menu__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
-                </svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                />
+              </svg>
             </label>
             <input class="search" type="search" name="search" id="search" placeholder="Поиск:" />
           </form>
@@ -86,8 +90,10 @@
             <div class="middle-menu__usermenu">
               <a class="middle-menu__button middle-menu__button--login" href="blank.html">
                 <svg class="middle-menu__icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z"/>
-                  <path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" />
+                  <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" />
+                  <path
+                    d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z"
+                  />
                 </svg>
                 Войти
               </a>
@@ -128,7 +134,7 @@
         <div class="wrapper">
           <h2>Реклама</h2>
           <ul class="advertisement__list list-clear">
-            <li class="advertisement__item advertisement__item--materials">
+            <li class="advertisement__item advertisement__item--materials new">
               <h3>Материалы</h3>
               <a class="advertisement__button" target="_blank" href="blank.html">На любой вкус</a>
             </li>
@@ -194,52 +200,80 @@
           </div>
           <ul class="popular-products__list list-clear">
             <li class="popular-products__item card-border">
-              <a href="blank.html">
+              <a class="popular-products__img" href="blank.html">
                 <h3>Перфоратор BOSCH<br />BFG 9000</h3>
                 <img src="img/catalog/bfg9000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000" />
               </a>
-              <div>
-                <a href="#">Купить</a>
-                <button class="button-clear" type="button">В закладки</button>
+              <div class="popular-products__user-menu">
+                <a class="popular-product__button popular-product__button--buy" href="#">
+                  <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                    />
+                  </svg>
+                  Купить </a
+                ><br />
+                <button class="popular-product__button popular-product__button--bookmark button-clear" type="button">В закладки</button>
               </div>
-              <p  class="popular-products__price popular-products__price--old-price"><s>32500 Р.</s></p>
+              <p class="popular-products__price popular-products__price--old-price"><s>32500 Р.</s></p>
               <p class="popular-products__price popular-products__price--new-price">25500 Р.</p>
             </li>
-            <li class="popular-products__item card-border">
-              <a href="blank.html">
+            <li class="popular-products__item new card-border">
+              <a class="popular-products__img" href="blank.html">
                 <h3>Перфоратор BOSCH<br />BFG 3000</h3>
                 <img src="img/catalog/bfg3000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 3000" />
               </a>
-              <div>
-                <a href="#">Купить</a>
-                <button class="button-clear" type="button">В закладки</button>
+              <div class="popular-products__user-menu">
+                <a class="popular-product__button popular-product__button--buy" href="#">
+                  <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                    />
+                  </svg>
+                  Купить </a
+                ><br />
+                <button class="popular-product__button popular-product__button--bookmark button-clear" type="button">В закладки</button>
               </div>
-              <p><s>22500 Р.</s></p>
-              <p class="popular-products__new-price">15500 Р.</p>
+              <p class="popular-products__price popular-products__price--old-price"><s>22500 Р.</s></p>
+              <p class="popular-products__price popular-products__price--new-price">15500 Р.</p>
             </li>
             <li class="popular-products__item card-border">
-              <a href="blank.html">
+              <a class="popular-products__img" href="blank.html">
                 <h3>Перфоратор BOSCH<br />BFG 6000</h3>
                 <img src="img/catalog/bfg6000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 6000" />
               </a>
-              <div>
-                <a href="#">Купить</a>
-                <button class="button-clear" type="button">В закладки</button>
+              <div class="popular-products__user-menu">
+                <a class="popular-product__button popular-product__button--buy" href="#">
+                  <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                    />
+                  </svg>
+                  Купить </a
+                ><br />
+                <button class="popular-product__button popular-product__button--bookmark button-clear" type="button">В закладки</button>
               </div>
-              <p><s>30500 Р.</s></p>
-              <p class="popular-products__new-price">25500 Р.</p>
+              <p class="popular-products__price popular-products__price--old-price"><s>30500 Р.</s></p>
+              <p class="popular-products__price popular-products__price--new-price">25500 Р.</p>
             </li>
             <li class="popular-products__item card-border">
-              <a href="blank.html">
+              <a class="popular-products__img" href="blank.html">
                 <h3>Перфоратор BOSCH<br />BFG 2000</h3>
                 <img src="img/catalog/bfg2000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 2000" />
               </a>
-              <div>
-                <a href="#">Купить</a>
-                <button class="button-clear" type="button">В закладки</button>
+              <div class="popular-products__user-menu">
+                <a class="popular-product__button popular-product__button--buy" href="#">
+                  <svg class="user-menu__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                    />
+                  </svg>
+                  Купить </a
+                ><br />
+                <button class="popular-product__button popular-product__button--bookmark button-clear" type="button">В закладки</button>
               </div>
-              <p><s>22500 Р.</s></p>
-              <p class="popular-products__new-price">12500 Р.</p>
+              <p class="popular-products__price popular-products__price--old-price"><s>22500 Р.</s></p>
+              <p class="popular-products__price popular-products__price--new-price">12500 Р.</p>
             </li>
           </ul>
         </div>
@@ -297,31 +331,47 @@
       <section class="services">
         <div class="wrapper">
           <h2 class="section-title">Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <button class="services__button" type="button">Доставка</button>
-          <button class="services__button" type="button">Гарантия</button>
-          <button class="services__button" type="button">Кредит</button>
-          <ul class="services__list">
-            <li class="services__item">
-              <h3>Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-                этаж!
-              </p>
-            </li>
-            <li class="services__item">
-              <h3>Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть
-                уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class="services__item">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-              <a class="button" href="blank.html">Отправить заявку</a>
-            </li>
-          </ul>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами! <br />
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+          <div class="services__products">
+            <ul class="services-button__list list-clear">
+              <li class="services-button__item">
+                <input class="services-radio" type="radio" name="service" id="delivery" />
+                <label class="services__button" for="delivery">Доставка</label>
+              </li>
+              <li class="services-button__item">
+								<input class="services-radio" type="radio" name="service" id="guarantee" />
+                <label class="services__button" for="guarantee">Гарантия</label>
+              </li>
+              <li class="services-button__item">
+								<input class="services-radio" type="radio" name="service" id="credit" />
+                <label class="services__button" for="credit">Кредит</label>
+              </li>
+            </ul>
+            <ul class="services__list list-clear">
+              <li class="services__item services__item--background-delivery">
+                <h3 class="section-title section-title--dark-blue">Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+                  этаж!
+                </p>
+              </li>
+              <li class="services__item services__item--background-guarantee">
+                <h3 class="section-title section-title--dark-blue">Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете
+                  быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="services__item services__item--background-credit">
+                <h3 class="section-title section-title--dark-blue">Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a class="button" href="blank.html">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <div class="about-company">
