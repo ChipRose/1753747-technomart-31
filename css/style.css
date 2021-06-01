@@ -43,7 +43,7 @@
   /* purpur */
   --x-purpur: rgb(220, 145, 216);
   /* beige */
-	--x-extra-light-beige: rgb(244, 244, 244);
+  --x-extra-light-beige: rgb(244, 244, 244);
   --x-light-beige: rgb(249, 245, 240);
   /* color compare */
   --button-color: var(--x-red);
@@ -116,12 +116,12 @@
   --bottom-footer-button-background: var(--x-extra-dark-blue);
   --bottom-footer-button-background-hover-active: var(--x-red);
   --bottom-footer-text-active: var(--x-red);
-	/* modal window */
-	--modal-window-border:var(--x-red);
-	--modal-window-shadow:var(--x-shadow-light-black);
-	--form-text-placeholder:var(--x-middle-grey);
-	--form-border-field:var(--x-middle-grey);
-	--feed-back-footer-background:var(--x-extra-light-beige);
+  /* modal window */
+  --modal-window-border: var(--x-red);
+  --modal-window-shadow: var(--x-shadow-light-black);
+  --form-text-placeholder: var(--x-middle-grey);
+  --form-border-field: var(--x-middle-grey);
+  --feed-back-footer-background: var(--x-extra-light-beige);
 }
 .page-body {
   min-width: 940px;
@@ -139,6 +139,7 @@
 /* clear style */
 .page-body a {
   text-decoration: none;
+  cursor: pointer;
 }
 .clear-list {
   list-style: none;
@@ -175,7 +176,6 @@
 }
 .logo {
   text-align: center;
-  vertical-align: middle;
   background: var(--logo-background);
   box-shadow: 0px -5px 0px 0px var(--x-shadow-black) inset;
 }
@@ -214,7 +214,6 @@ input[type="search"]:focus {
 }
 .ordered-button {
   text-align: center;
-  vertical-align: middle;
   background: var(--ordered-button-background);
 }
 .ordered-button:hover,
@@ -228,11 +227,7 @@ input[type="search"]:focus {
 .middle-menu {
   color: var(--x-black);
 }
-.middle-menu-container {
-  display: flex;
-}
 .middle-menu__title {
-  flex: 0 0 197px;
   font-size: 16px;
   line-height: 23px;
   color: var(--middle-menu-text);
@@ -275,10 +270,6 @@ input[type="search"]:focus {
 }
 .middle-menu__button:active .middle-menu__icon-login {
   fill: var(--middle-menu-button-active);
-}
-.navigation-menu__list {
-  display: flex;
-  justify-content: space-around;
 }
 .navigation-menu__list--shadow {
   background: var(--navigation-menu-backgroung);
@@ -375,13 +366,7 @@ input[type="search"]:focus {
 .advertisement__button-container {
   position: absolute;
   top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-}
-.advertisement__button-slider {
-  background: none;
-  cursor: pointer;
+  z-index: 2;
 }
 /* section header */
 .section-header {
@@ -395,9 +380,6 @@ input[type="search"]:focus {
 }
 /* products */
 .popular-products__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   color: var(--x-black);
 }
 .popular-products__item {
@@ -406,6 +388,9 @@ input[type="search"]:focus {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+.popular-products__img {
+  text-align: center;
 }
 .new:before {
   content: "new";
@@ -432,10 +417,6 @@ input[type="search"]:focus {
   font-size: 18px;
   line-height: 20px;
   color: var(--x-black);
-}
-.popular-products__img img {
-  display: block;
-  max-width: 100%;
 }
 .popular-product__button {
   font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
@@ -491,10 +472,8 @@ input[type="search"]:focus {
   color: var(--old-price-color);
 }
 /* manufacturers */
-.popular-manufacturers__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.popular-manufacturers__item {
+  text-align: center;
 }
 .popular-manufacturers__item:hover,
 .popular-manufacturers__item:focus {
@@ -565,9 +544,6 @@ input[type="search"]:focus {
 .about-company {
   color: var(--x-black);
 }
-.about-company__container {
-  display: flex;
-}
 .about-company p {
   font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
   font-size: 13px;
@@ -579,14 +555,6 @@ input[type="search"]:focus {
 /* footer */
 .top-footer a {
   color: inherit;
-}
-.top-footer__container {
-  display: flex;
-}
-.top-footer__navigation-list {
-  display: flex;
-  flex: 1 0 auto;
-  justify-content: space-between;
 }
 .main-footer {
   background: var(--footer-background);
@@ -603,15 +571,6 @@ input[type="search"]:focus {
 }
 .main-footer__item:active {
   opacity: 0.5;
-}
-.top-footer__address-navigation {
-  display: flex;
-  justify-content: space-between;
-}
-.main-footer__list {
-  display: inline-flex;
-  flex: 1 0 auto;
-  justify-content: space-between;
 }
 .bottom-footer {
   background: var(--bottom-footer-background);
