@@ -271,7 +271,7 @@ input[type="search"]:focus {
 .middle-menu__button:active .middle-menu__icon-login {
   fill: var(--middle-menu-button-active);
 }
-.navigation-menu__list--shadow {
+.navigation-menu__list {
   background: var(--navigation-menu-backgroung);
   box-shadow: 0px -5px 0px 0px var(--navigation-menu-shadow) inset;
 }
