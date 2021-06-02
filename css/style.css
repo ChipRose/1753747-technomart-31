@@ -277,14 +277,14 @@
 .header .contacts-container {
   text-align: center;
 }
-.header .phone {
+.phone {
   font-size: var(--fz-phone);
   line-height: var(--lh-phone);
   font-weight: 700;
   color: var(--middle-menu-phone-text);
   border: 3px solid var(--x-white);
 }
-.header .phone:hover {
+.phone:hover {
   color: var(--x-black);
 }
 .icon-phone {
@@ -293,7 +293,7 @@
 .icon-login {
   fill: var(--middle-menu-icon-login);
 }
-.header .address {
+.address {
   font-size: var(--fz-address);
   line-height: var(--lh-address);
 }
@@ -411,7 +411,7 @@
   font-size: var(--fz-adv-descr);
   line-height: var(--lh-adv-descr);
 }
-.advertisement .img {
+.img {
   position: relative;
 }
 .advertisement .text-container {
@@ -533,13 +533,13 @@
   font-size: var(--fz-page-text-placeholder);
   line-height: var(--lh-page-text-placeholder);
 }
-.services .background-delivery {
+.background-delivery {
   background: url("/img/service/service-delivery.png") 100% 0 no-repeat, transparent;
 }
-.services .background-guarantee {
+.background-guarantee {
   background: url("/img/service/service-guarantee.png") 100% 0 no-repeat, transparent;
 }
-.services .background-credit {
+.background-credit {
   background: url("/img/service/service-credit.png") 100% 0 no-repeat, transparent;
 }
 .services .buttons-list {
