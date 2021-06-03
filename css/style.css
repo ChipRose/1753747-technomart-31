@@ -582,7 +582,7 @@
   color: var(--x-black);
 }
 .company-item {
-  background: url("/img/icon/icon-list.svg") 0 50% no-repeat, transparent;
+  background: url("/img/icon/icon-bullet.svg") 0 50% no-repeat, transparent;
 }
 /* footer */
 .footer {
