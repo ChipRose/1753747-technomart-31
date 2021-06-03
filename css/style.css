@@ -203,9 +203,8 @@
   background: none;
   cursor: pointer;
 }
-.paragraph-clear {
+.text-clear {
   margin: inherit;
-  padding: inherit;
 }
 .card-border {
   border: 1px solid var(--card-border-color);
