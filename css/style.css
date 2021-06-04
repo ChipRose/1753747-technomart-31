@@ -792,8 +792,12 @@
 .icon-sorting:focus{
 	fill: var(--x-black);
 }
-.button-checkbox:checked + .button-label .icon-sorting{
+.button-checkbox:checked + .icon-sorting{
 	fill:var(--checked-color);
+}
+/* filter */
+.filter{
+	color:var(--x-black);
 }
 /* pagination */
 .pagination-list {
