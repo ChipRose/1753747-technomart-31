@@ -156,31 +156,73 @@
               <legend>Цена</legend>
               <input type="range" min="0" max="30500" step="500" value="30000" />
               <p>
-                <label for="filter-minprice">Минимальная цена</label>
-                <input type="number" name="filter-minprice" id="filter-minprice" min="0" max="30000" step="500" value="0" />
-                <label for="filter-maxprice">Максимальная цена</label>
-                <input type="number" name="filter-maxprice" id="filter-maxprice" min="0" max="30000" step="500" value="30000" />
+                <label>
+                  <input type="number" name="filter-minprice" id="filter-minprice" min="0" max="30000" step="500" value="0" />
+                  <span class="visually-hidden">Минимальная цена</span>
+                </label>
+                <label>
+                  <input type="number" name="filter-maxprice" id="filter-maxprice" min="0" max="30000" step="500" value="30000" />
+                  <span class="visually-hidden">Максимальная цена</span>
+                </label>
+                <label for="filter-maxprice"></label>
               </p>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
-              <input type="checkbox" name="bosch" id="filter-bosch" checked />
-              <label for="filter-bosch">Bosch</label>
-              <input type="checkbox" name="interskol" id="filter-interskol" />
-              <label for="filter-interskol">Интерскол</label>
-              <input type="checkbox" name="makita" id="filter-makita" checked />
-              <label for="filter-makita">Makita</label>
-              <input type="checkbox" name="dewalt" id="filter-dewalt" />
-              <label for="filter-dewalt">Dewalt</label>
-              <input type="checkbox" name="hitachi" id="filter-hitachi" />
-              <label for="filter-hitachi">Hitachi</label>
+              <ul class="list-clear filter-manufacturer-list">
+                <li class="filter-manufacturer-item">
+                  <label>
+                    <input class="visually-hidden check" type="checkbox" name="bosch" checked />
+                    <span class="checkbox"></span>
+                    <span class="filter-manufacturer-label">Bosch</span>
+                  </label>
+                </li>
+                <li class="filter-manufacturer-item">
+                  <label>
+                    <input class="visually-hidden check" type="checkbox" name="interskol" />
+                    <span class="checkbox"></span>
+                    <span class="filter-manufacturer-label">Интерскол</span>
+                  </label>
+                </li>
+                <li class="filter-manufacturer-item">
+                  <label>
+                    <input class="visually-hidden check" type="checkbox" name="makita" checked />
+                    <span class="checkbox"></span>
+                    <span class="filter-manufacturer-label">Makita</span>
+                  </label>
+                </li>
+                <li class="filter-manufacturer-item">
+                  <label>
+                    <input class="visually-hidden check" type="checkbox" name="dewalt"  disabled/>
+                    <span class="checkbox"></span>
+                    <span class="filter-manufacturer-label">Dewalt</span>
+                  </label>
+                </li>
+                <li class="filter-manufacturer-item">
+                  <label>
+                    <input class="visually-hidden check" type="checkbox" name="hitachi" checked disabled/>
+                    <span class="checkbox"></span>
+                    <span class="filter-manufacturer-label">Hitachi</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset>
               <legend>Питание:</legend>
-              <input type="radio" name="filter-charge" value="accumulator" id="filter-accumulator" />
-              <label for="filter-accumulator">Аккумуляторные</label>
-              <input type="radio" name="filter-charge" value="electricity" id="filter-electricity" checked />
-              <label for="filter-electricity">Сетевые</label>
+              <ul class="list-clear filter-charge-list">
+                <li class="filter-charge-item">
+                  <label>
+                    <input class="visually-hidden" type="radio" name="filter-accumulator" value="accumulator" checked />
+                    <span class="filter-charge">Аккумуляторные</span>
+                  </label>
+                </li>
+                <li class="filter-charge-item">
+                  <label>
+                    <input class="visually-hidden" type="radio" name="filter-accumulator" value="electricity" />
+                    <span class="filter-charge">Сетевые</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>

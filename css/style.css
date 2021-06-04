@@ -677,8 +677,8 @@
   --sorting-title-backgroung: var(--x-beige);
   --sorting-menu-text: var(--x-transparent-black05);
   --sorting-underline: var(--x-red);
-	--sorting-icon:var(--x-extra-light-grey);
-	--checked-color:var(--x-red);
+  --sorting-icon: var(--x-extra-light-grey);
+  --checked-color: var(--x-red);
 }
 /* font size */
 :root {
@@ -773,31 +773,64 @@
 .sorting-type-list {
   color: var(--sorting-menu-text);
 }
-.sorting-underline{
+.sorting-underline {
   border-bottom: 1px dotted var(--sorting-underline);
 }
-.icon-sorting{
-	fill: var(--sorting-icon);
+.icon-sorting {
+  fill: var(--sorting-icon);
 }
 .sorting-lable:hover,
 .sorting-lable:focus {
   color: var(--x-black);
   border-bottom: 1px solid var(--sorting-underline);
 }
-.sorting-checkbox:checked + .sorting-lable{
+.sorting-checkbox:checked + .sorting-lable {
   color: var(--checked-color);
-	border:none;
+  border: none;
 }
 .icon-sorting:hover,
-.icon-sorting:focus{
-	fill: var(--x-black);
+.icon-sorting:focus {
+  fill: var(--x-black);
 }
-.button-checkbox:checked + .icon-sorting{
-	fill:var(--checked-color);
+.button-checkbox:checked + .icon-sorting {
+  fill: var(--checked-color);
 }
 /* filter */
-.filter{
-	color:var(--x-black);
+.filter {
+  color: var(--x-black);
+}
+
+.checkbox {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background: url("/img/icon/checkbox-off.svg") no-repeat;
+}
+.checkbox {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background: url("/img/icon/checkbox-off.svg") no-repeat;
+}
+.check:hover + .checkbox,
+.check:focus + .checkbox {
+  background: url("/img/icon/checkbox-off-hover.svg") no-repeat;
+}
+.check:checked:hover + .checkbox,
+.check:checked:focus + .checkbox {
+  background: url("/img/icon/checkbox-on-hover.svg") no-repeat;
+}
+.check:checked + .checkbox {
+  background: url("/img/icon/checkbox-on.svg") no-repeat;
+}
+.check:checked:disabled + .checkbox {
+  background: url("/img/icon/checkbox-on-disabled.svg") no-repeat;
+}
+.check:disabled + .checkbox {
+  background: url("/img/icon/checkbox-off-disabled.svg") no-repeat;
+}
+.filter-manufacturer-label {
+  padding: 0 0 0 35px;
 }
 /* pagination */
 .pagination-list {
