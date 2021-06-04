@@ -190,27 +190,34 @@
             <h2 class="text-clear navigation-text">Сортировка:</h2>
             <ul class="list-clear sorting-type-list navigation-text">
               <li class="sorting-type-item">
-                <a class="link-clear sorting-underline" href="#">По цене</a>
+                <input class="visually-hidden sorting-checkbox" type="radio" name="sort" value="price" id="to-price" checked />
+                <label class="sorting-lable sorting-underline" for="to-price">По цене</label>
               </li>
               <li class="sorting-type-item">
-                <a class="link-clear sorting-underline" href="#">По типу</a>
+                <input class="visually-hidden sorting-checkbox" type="radio" name="sort" value="type" id="to-type" checked />
+                <label class="sorting-lable sorting-underline" for="to-type">По типу</label>
               </li>
               <li class="sorting-type-item">
-                <a class="link-clear sorting-underline" href="#">По фунционалу</a>
+                <input class="visually-hidden sorting-checkbox" type="radio" name="sort" value="function" id="to-function" checked />
+                <label class="sorting-lable sorting-underline" for="to-function">По фунционалу</label>
               </li>
             </ul>
-            <ul class="list-clear sorting-button">
-              <li>
-                <button class="button-clear" type="button">
-                  <svg class="icon-sorting icon-up" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.66241 0L11.1624 10L0.162415 10" />
-                  </svg>
-                </button>
-                <button class="button-clear" type="button">
+            <ul class="list-clear sorting-button-list">
+              <li class="sorting-button-item">
+                <input class="visually-hidden button-checkbox" type="radio" name="direction" value="min-to-max" id="min-to-max" checked />
+                <label class="button-label" for="min-to-max">
                   <svg class="icon-sorting icon-down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11" />
                   </svg>
-                </button>
+                </label>
+              </li>
+              <li class="sorting-button-item">
+                <input class="visually-hidden button-checkbox" type="radio" name="direction" value="max-to-min" id="max-to-min" checked />
+                <label class="button-label" for="max-to-min">
+                  <svg class="icon-sorting icon-up" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 0L11.1624 10L0.162415 10" />
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>
