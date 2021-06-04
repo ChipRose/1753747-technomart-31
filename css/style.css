@@ -4,14 +4,17 @@
   /* black */
   --x-black: rgb(0, 0, 0);
   --x-shadow-black: rgba(0, 0, 0, 0.24);
+  --x-transparent-black05: rgba(0, 0, 0, 0.3);
   --x-shadow-light-black: rgba(0, 0, 0, 0.15);
   /* grey */
   --x-extra-light-grey: rgb(197, 197, 197);
+  --x-light-medium-grey: rgb(193, 198, 206);
   --x-transparent-extra-light-grey03: rgba(197, 197, 197, 0.3);
   --x-transparent-grey03: rgba(169, 169, 169, 0.3);
   --x-middle-grey: rgb(169, 169, 169);
   --x-grey: rgb(234, 234, 234);
   --x-light-grey: rgb(183, 191, 200);
+  --x-semi-grey: rgb(229, 229, 229);
   --x-dark-grey: rgb(61, 84, 111);
   /* white */
   --x-white: rgb(255, 255, 255);
@@ -45,6 +48,7 @@
   /* beige */
   --x-extra-light-beige: rgb(244, 244, 244);
   --x-light-beige: rgb(249, 245, 240);
+  --x-beige: rgb(247, 243, 236);
   /* color compare */
   --button-color: var(--x-red);
   --button-color-hover: var(--x-dark-red);
@@ -182,6 +186,7 @@
   font-size: var(--fz-main);
   line-height: var(--lh-main);
   color: var(--x-white);
+  box-sizing: border-box;
 }
 .wrapper {
   width: 940px;
@@ -195,8 +200,8 @@
 }
 .list-clear {
   list-style: none;
-  padding: inherit;
-  margin: inherit;
+  padding: 0;
+  margin: 0;
 }
 .button-clear {
   border: none;
@@ -204,7 +209,8 @@
   cursor: pointer;
 }
 .text-clear {
-  margin: inherit;
+  margin: 0;
+  font-weight: 400;
 }
 .card-border {
   border: 1px solid var(--card-border-color);
@@ -455,22 +461,22 @@
   line-height: var(--lh-title-prod);
   color: var(--x-black);
 }
-.popular-products .button {
+.prooduct-menu-button {
   font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
 }
-.popular-products .button-buy {
+.button-buy {
   font-weight: 400;
   color: var(--x-white);
   background: var(--card-button-buy-background);
   box-shadow: inset 0px -3px 0px var(--card-button-buy-shadow);
 }
-.popular-products .button-bookmark {
+.button-bookmark {
   color: var(--card-button-bookmark-text);
   border: 3px solid var(--card-button-bookmark-border);
 }
-.popular-products .button-buy:hover,
-.popular-product .button-buy:focus {
+.button-buy:hover,
+.button-buy:focus {
   background: var(--card-button-buy-background-hover);
 }
 .popular-products .button-buy:active {
@@ -484,7 +490,7 @@
   border-color: var(--card-button-bookmark-border-active);
   opacity: 0.5;
 }
-.popular-products .user-menu-container {
+.user-menu-hover {
   position: absolute;
   top: 0;
   left: 50%;
@@ -493,7 +499,7 @@
   background: var(--x-white);
   display: none;
 }
-.product-item:hover .user-menu-container {
+.product-item:hover .user-menu-hover {
   display: block;
 }
 .price {
@@ -655,6 +661,153 @@
 }
 .feed-back-footer {
   background: var(--feed-back-footer-background);
+}
+/* catalog.html */
+/* color */
+:root {
+  --personal-data: var(--x-middle-blue);
+  --personal-data-hover: var(--x-red);
+  --authorization-action: var(--x-extra-light-grey);
+  --authorization-icon-fill: var(--x-extra-light-grey);
+  --authorization-icon-fill-hover: var(--x-dark-grey);
+  --home-icon-fill: var(--x-light-medium-grey);
+  --catalog-sec-background: var(--x-light-blue);
+  --catalog-title-color: var(--x-middle-blue);
+  --pagination-color-border: var(--x-semi-grey);
+  --pagination-color-border-hover: var(--x-extra-light-grey);
+  --pagination-color-border-active: var(--x-red);
+  --page-active-background: var(--x-red);
+  --sorting-title-backgroung: var(--x-beige);
+  --sorting-menu-text: var(--x-transparent-black05);
+  --sorting-underline: var(--x-red);
+}
+/* font size */
+:root {
+  --fz-authorization-name: var(--fz6);
+  --lh-authorization-name: var(--lh4);
+  --fz-personal-data: var(--fz3);
+  --lh-personal-data: var(--lh2);
+  --fz-crumbs: var(--fz1);
+  --lh-crumbs: var(--lh2);
+}
+/* authorization */
+.red {
+  background: var(--button-color);
+}
+.authorization-field {
+  background: var(--x-white);
+}
+.name {
+  font-size: var(--fz-authorization-name);
+  line-height: var(--lh-authorization-name);
+}
+.authorization-icon {
+  fill: var(--authorization-icon-fill);
+}
+.authorization-field:hover .authorization-icon,
+.authorization-field:focus .authorization-icon {
+  fill: var(--authorization-icon-fill-hover);
+}
+.name:active {
+  color: var(--authorization-action);
+}
+.authorization-field:active {
+  color: var(--authorization-action);
+}
+.authorization-field:active .authorization-icon {
+  fill: var(--authorization-action);
+}
+.authorization-list {
+  display: flex;
+  font-size: var(--fz-personal-data);
+  line-height: var(--lh-personal-data);
+  color: var(--personal-data);
+}
+.authorization-item {
+  position: relative;
+}
+.authorization-item:not(:last-child) {
+  margin: 0 30px 0 0;
+}
+.authorization-item:not(:last-child):after {
+  content: url("/img/icon/icon-blue-bullet.svg");
+  position: absolute;
+  transform: translate(12px, -2px);
+}
+.authorization-item:hover,
+.authorization-item:focus {
+  color: var(--personal-data-hover);
+}
+.authorization-item:active {
+  color: var(--authorization-action);
+}
+/* bread crumbs */
+.bread-home-icon {
+  fill: var(--home-icon-fill);
+}
+.bread-crumbs-container {
+  display: flex;
+}
+.navigation-text {
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+  font-size: var(--fz-crumbs);
+  line-height: var(--lh-crumbs);
+  text-transform: uppercase;
+  color: var(--x-black);
+}
+.bread-item:not(:last-child) {
+  margin: 0 40px 0 0;
+}
+.bread-item:not(:last-child):after {
+  content: url("/img/icon/icon-right-small-arrow.svg");
+  position: absolute;
+  transform: translate(16px, 1px);
+}
+.catalog-title {
+  color: var(--catalog-title-color);
+  background: var(--catalog-sec-background);
+}
+/* sorting */
+.sorting {
+  background: var(--sorting-title-backgroung);
+}
+.sorting-type-list {
+  color: var(--sorting-menu-text);
+}
+.sorting-underline {
+  border-bottom: 1px dotted var(--sorting-underline);
+}
+.sorting-underline:hover,
+.sorting-underline:active {
+  color: var(--x-black);
+  border-bottom: 1px solid var(--sorting-underline);
+}
+/* pagination */
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+.pagination-item {
+  padding: 10px 15px 10px 15px;
+  border: 1px solid var(--pagination-color-border);
+  border-radius: 2px;
+}
+.pagination-item:hover,
+.pagination-item:focus {
+  border-color: var(--pagination-color-border-hover);
+}
+.pagination-item:active {
+  border-color: var(--pagination-color-border-active);
+}
+.page-active {
+  color: var(--x-white);
+  background: var(--page-active-background);
+  border-width: 0;
+}
+/* about */
+.about-perforator {
+  color: var(--x-black);
+  background: var(--catalog-sec-background);
 }
 .visually-hidden {
   position: absolute;
