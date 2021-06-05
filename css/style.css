@@ -369,7 +369,7 @@
 	font-weight: 700;
 }
 .materials {
-	background: url("img/icon/icon-basket.svg") 100% 50% no-repeat, var(--material-card-background);
+	background: url("../img/icon/icon-basket.svg") 100% 50% no-repeat, var(--material-card-background);
 }
 .tool {
 	background: url("../img/icon/icon-snippet.svg") 100% 50% no-repeat, var(--tool-card-background);
@@ -465,8 +465,10 @@
 .popular-products .title {
 	font-size: var(--fz-title-prod);
 	line-height: var(--lh-title-prod);
-	font-weight: 700;
 	color: var(--x-black);
+}
+.bold{
+	font-weight: 700;
 }
 .prooduct-menu-button {
 	font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
