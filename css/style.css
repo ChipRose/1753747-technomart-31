@@ -462,12 +462,10 @@
 .product-item:active {
 	box-shadow: 0px 4px 20px var(--card-shadow-hover);
 }
-.popular-products .title {
+.product-title {
 	font-size: var(--fz-title-prod);
 	line-height: var(--lh-title-prod);
 	color: var(--x-black);
-}
-.bold{
 	font-weight: 700;
 }
 .prooduct-menu-button {
