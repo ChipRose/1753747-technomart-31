@@ -510,6 +510,7 @@
 	display: block;
 }
 .price {
+	font-weight: inherit;
 	text-align: center;
 	font-size: var(--fz-price);
 	line-height: var(--lh-price);
