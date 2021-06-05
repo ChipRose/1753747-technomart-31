@@ -49,6 +49,7 @@
 	--x-purpur: rgb(220, 145, 216);
 	/* beige */
 	--x-extra-light-beige: rgb(244, 244, 244);
+	--x-midle-beige: rgb(241, 241, 241);
 	--x-light-beige: rgb(249, 245, 240);
 	--x-beige: rgb(247, 243, 236);
 	/* color compare */
@@ -686,7 +687,10 @@
 	--radio-button-color: var(--x-extra-light-grey);
 	--radio-button-color-hover: var(--x-light-dark-grey);
 	--radio-button-color-active: var(--x-transparent-light-dark-grey03);
-	--filter-show-button-border:var(--x-semi-grey);
+	--filter-show-button-border: var(--x-semi-grey);
+	--filter-range:var(--x-green);
+	--filter-range-background:var(--x-extra-light-grey);
+	--cart-footer-background: var(--x-midle-beige);
 }
 /* font size */
 :root {
@@ -700,6 +704,8 @@
 	--lh-filter-title: var(--lh7);
 	--fz-filter-item: var(--fz10);
 	--lh-filter-item: var(--lh9);
+	--fz-cart: var(--fz7);
+	--lh-cart: var(--lh7);
 }
 /* authorization */
 .red {
@@ -753,11 +759,14 @@
 	color: var(--authorization-action);
 }
 /* bread crumbs */
+.bread-crumbs-container {
+	display: flex;
+}
 .bread-home-icon {
 	fill: var(--home-icon-fill);
 }
-.bread-crumbs-container {
-	display: flex;
+.bread-home-icon:hover {
+	opacity: 0.3;
 }
 .navigation-text {
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
@@ -774,12 +783,16 @@
 	position: absolute;
 	transform: translate(16px, 1px);
 }
+.bread-item:hover,
+.bread-item:hover {
+	opacity: 0.3;
+}
 .catalog-title {
 	color: var(--catalog-title-color);
 	background: var(--catalog-sec-background);
 }
 /* sorting */
-.beige-bg{
+.beige-bg {
 	background: var(--sorting-title-backgroung);
 }
 .sorting-type-list {
@@ -788,7 +801,7 @@
 .sorting-underline {
 	border-bottom: 1px dotted var(--sorting-underline);
 }
-.icon-sorting {
+.sorting-icon {
 	fill: var(--sorting-icon);
 }
 .sorting-lable:hover,
@@ -800,11 +813,11 @@
 	color: var(--checked-color);
 	border: none;
 }
-.icon-sorting:hover,
-.icon-sorting:focus {
+.sorting-icon:hover,
+.sorting-icon:focus {
 	fill: var(--x-black);
 }
-.button-checkbox:checked + .icon-sorting {
+.sorting-button:checked + .sorting-icon {
 	fill: var(--checked-color);
 }
 /* filter */
@@ -815,11 +828,41 @@
 	line-height: var(--lh-filter-item);
 	color: var(--x-black);
 }
-.beige-bg{
+.beige-bg {
 	background: var(--sorting-title-backgroung);
 }
-.field-number{
-	border:none;
+/* price range */
+.filter-range{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+.filter-full-range{
+	width: 180px;
+	height: 2px;
+	background:var(--filter-range-background);
+}
+.filter-part-range{
+	width: 80%;
+	left:10%;
+	height: 2px;
+	background: var(--filter-range);
+	position: relative;
+}
+.filter-min-point{
+	position: absolute;
+	top:50%;
+	transform: translate(-50%,-10px);
+}
+.filter-max-point{
+	position: absolute;
+	top:50%;
+	right: 0;
+	transform: translate(50%,-10px);
+}
+.field-number {
+	border: none;
 	background: var(--sorting-title-backgroung);
 	text-align: center;
 }
@@ -833,10 +876,10 @@
 	line-height: var(--lh-filter-title);
 }
 .filter-area {
-	border:0;
+	border: 0;
 	padding: 0;
 }
-.filter-show-button{
+.filter-show-button {
 	border: 1px solid var(--filter-show-button-border);
 }
 .filter-manufacturer-label {
@@ -870,7 +913,6 @@
 .check:disabled + .checkbox {
 	background: url("/img/icon/checkbox-off-disabled.svg") no-repeat;
 }
-
 /* radio */
 .radio-button {
 	display: inline-flex;
@@ -883,7 +925,7 @@
 	border-radius: 50%;
 	border: 4px solid var(--radio-button-color);
 }
-.inner-radio {
+.radio-inner {
 	opacity: 0;
 	width: 9px;
 	height: 9px;
@@ -894,16 +936,16 @@
 .radio:focus + .radio-button {
 	border-color: var(--radio-button-color-hover);
 }
-.radio:hover + * .inner-radio,
-.radio:focus + * .inner-radio {
+.radio:hover + * .radio-inner,
+.radio:focus + * .radio-inner {
 	background: var(--radio-button-color-hover);
 }
-.radio:checked + * .inner-radio {
+.radio:checked + * .radio-inner {
 	opacity: 1;
 	background: var(--radio-button-color);
 }
-.radio:checked:hover + * .inner-radio,
-.radio:checked:hover + * .inner-radio {
+.radio:checked:hover + * .radio-inner,
+.radio:checked:hover + * .radio-inner {
 	background: var(--radio-button-color-hover);
 }
 /* pagination */
@@ -917,7 +959,9 @@
 	border-radius: 2px;
 }
 .pagination-item:hover,
-.pagination-item:focus {
+.pagination-item:focus,
+.filter-show-button:hover,
+.filter-show-button:focus {
 	border-color: var(--pagination-color-border-hover);
 }
 .pagination-item:active {
@@ -932,6 +976,30 @@
 .about-perforator {
 	color: var(--x-black);
 	background: var(--catalog-sec-background);
+}
+/* cart */
+.cart-footer {
+	font-size: var(--fz-cart);
+	line-height: var(--lh-cart);
+	background: var(--cart-footer-background);
+}
+.cart-button {
+	font-size: var(--fz-button-new);
+	line-height: var(--lh-button-new);
+	text-align: center;
+	text-transform: uppercase;
+	background: var(--x-white);
+}
+.cart-button:hover,
+.cart-button:focus{
+	background:var(--x-transparent-grey03);
+}
+.cart .button{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 192px;
+	height:38px;
 }
 .visually-hidden {
 	position: absolute;
