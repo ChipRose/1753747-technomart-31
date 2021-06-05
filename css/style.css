@@ -749,7 +749,7 @@
 	margin: 0 30px 0 0;
 }
 .authorization-item:not(:last-child):after {
-	content: url("/img/icon/icon-blue-bullet.svg");
+	content: url("../img/icon/icon-blue-bullet.svg");
 	position: absolute;
 	transform: translate(12px, -2px);
 }
