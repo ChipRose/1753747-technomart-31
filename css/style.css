@@ -185,7 +185,10 @@
 	--lh-bottom-text: var(--lh2);
 }
 .page-body {
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 	min-width: 940px;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
@@ -359,6 +362,13 @@
 	background: var(--button-color-active);
 }
 /* advertisement */
+/* advertisement */
+.advertisement-list {
+	display: grid;
+	grid-template-columns: repeat(12, 60px);
+	grid-template-rows: 123px 123px 123px;
+	gap: 20px;
+}
 .advertisement-item {
 	position: relative;
 	overflow: hidden;
@@ -369,19 +379,38 @@
 	font-weight: 700;
 }
 .materials {
+	grid-column: 1 / span 4;
+	grid-row: 1/2;
 	background: url("../img/icon/icon-basket.svg") 100% 50% no-repeat, var(--material-card-background);
 }
 .tool {
+	grid-column: 5 / span 4;
+	grid-row: 1/2;
 	background: url("../img/icon/icon-snippet.svg") 100% 50% no-repeat, var(--tool-card-background);
 }
 .technics {
+	grid-column: 9 / span 4;
+	grid-row: 1/2;
 	background: url("../img/icon/icon-track.svg") 100% 50% no-repeat, var(--technic-card-background);
 }
 .discounts {
+	grid-column: 9 / span 4;
+	grid-row: 2/3;
 	background: url("../img/icon/icon-cart-big.svg") 100% 50% no-repeat, var(--discount-card-background);
 }
 .delivery {
+	grid-column: 9 / span 4;
+	grid-row: 3/4;
 	background: url("../img/icon/icon-car.svg") 100% 50% no-repeat, var(--delivery-card-background);
+}
+.slider {
+	grid-column: 1 / span 8;
+	grid-row: 2/4;
+}
+.slider-button-container {
+	grid-column: 1 / span 8;
+	grid-row: 2/4;
+	z-index: 1;
 }
 .advertisement .button {
 	font-size: var(--fz-button-new);
@@ -416,13 +445,14 @@
 	color: var(--x-white);
 	background: var(--new-label-background-color);
 }
+
 /* slider */
-.slider .title {
+.slider-title {
 	text-transform: uppercase;
 	font-size: var(--fz-slider);
 	line-height: var(--lh-slider);
 }
-.advertisement .description {
+.slider-description {
 	font-size: var(--fz-adv-descr);
 	line-height: var(--lh-adv-descr);
 }
