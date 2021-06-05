@@ -688,8 +688,8 @@
 	--radio-button-color-hover: var(--x-light-dark-grey);
 	--radio-button-color-active: var(--x-transparent-light-dark-grey03);
 	--filter-show-button-border: var(--x-semi-grey);
-	--filter-range:var(--x-green);
-	--filter-range-background:var(--x-extra-light-grey);
+	--filter-range: var(--x-green);
+	--filter-range-background: var(--x-extra-light-grey);
 	--cart-footer-background: var(--x-midle-beige);
 }
 /* font size */
@@ -832,34 +832,34 @@
 	background: var(--sorting-title-backgroung);
 }
 /* price range */
-.filter-range{
+.filter-range {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 80px;
 }
-.filter-full-range{
+.filter-full-range {
 	width: 180px;
 	height: 2px;
-	background:var(--filter-range-background);
+	background: var(--filter-range-background);
 }
-.filter-part-range{
+.filter-part-range {
 	width: 80%;
-	left:10%;
+	left: 10%;
 	height: 2px;
 	background: var(--filter-range);
 	position: relative;
 }
-.filter-min-point{
+.filter-min-point {
 	position: absolute;
-	top:50%;
-	transform: translate(-50%,-10px);
+	top: 50%;
+	transform: translate(-50%, -10px);
 }
-.filter-max-point{
+.filter-max-point {
 	position: absolute;
-	top:50%;
+	top: 50%;
 	right: 0;
-	transform: translate(50%,-10px);
+	transform: translate(50%, -10px);
 }
 .field-number {
 	border: none;
@@ -991,15 +991,15 @@
 	background: var(--x-white);
 }
 .cart-button:hover,
-.cart-button:focus{
-	background:var(--x-transparent-grey03);
+.cart-button:focus {
+	background: var(--x-transparent-grey03);
 }
-.cart .button{
+.cart .button {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	width: 192px;
-	height:38px;
+	height: 38px;
 }
 .visually-hidden {
 	position: absolute;
