@@ -764,6 +764,8 @@
 	display: grid;
 	grid-template-columns: repeat(12, 60px);
 	column-gap: 20px;
+	padding: 70px 0 70px 0;
+
 }
 .company-technomart {
 	grid-column: 1/9;
