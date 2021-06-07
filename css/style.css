@@ -381,6 +381,7 @@
 .header-button:active .icon-login {
 	fill: var(--middle-menu-button-active);
 }
+/* navigation menu*/
 .navigation-menu {
 	background: var(--navigation-menu-backgroung);
 	box-shadow: 0px -5px 0px 0px var(--navigation-menu-shadow) inset;
@@ -409,7 +410,6 @@
 .button-main:active {
 	background: var(--button-color-active);
 }
-/* advertisement */
 /* advertisement */
 .advertisement-list {
 	display: grid;
@@ -467,6 +467,7 @@
 	grid-column: 1 / span 8;
 	grid-row: 2/4;
 }
+/* advertisement buttons */
 .slider-button-container {
 	grid-column: 1 / span 8;
 	grid-row: 2/4;
@@ -509,7 +510,6 @@
 	color: var(--x-white);
 	background: var(--new-label-background-color);
 }
-
 /* slider */
 .slider-title {
 	text-transform: uppercase;
@@ -530,7 +530,6 @@
 .slider {
 	position: relative;
 }
-
 /* section header */
 .header-section {
 	background: var(--x-light-beige);
@@ -685,6 +684,17 @@
 /* information */
 .about-company {
 	color: var(--x-black);
+}
+.about-company .wrapper{
+	display: grid;
+	grid-template-columns: repeat(12, 60px);
+	column-gap: 20px;
+}
+.company-technomart{
+	grid-column: 1/9;
+}
+.company-contacts{
+	grid-column: 9/13;
 }
 .company-item {
 	background: url("../img/icon/icon-bullet.svg") 0 50% no-repeat, transparent;
