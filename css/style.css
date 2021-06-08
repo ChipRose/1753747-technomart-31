@@ -903,9 +903,8 @@
 .footer-top .logo{
 	grid-row:1/2;
 	grid-column: 1/2;
-	align-self: flex-start;
-	width: 220px;
-	padding: 20px 0 25px 0;
+	text-align: center;
+
 }
 .footer-item {
 	font-size: var(--fz-footer-item);
