@@ -325,6 +325,7 @@
 }
 .user-menu {
 	box-sizing: border-box;
+	width: 150px;
 	padding: 9px;
 }
 .user-menu:hover .icon,
