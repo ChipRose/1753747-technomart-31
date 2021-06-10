@@ -1232,7 +1232,7 @@
 /* catalog grid container */
 .catalog-container {
 	display: grid;
-	grid-template-columns: 220px 1fr;
+	grid-template-columns: min-content 1fr;
 	grid-template-rows: auto min-content;
 	column-gap: 20px;
 }
@@ -1272,6 +1272,7 @@
 }
 /* filter */
 .filter {
+	width: 220px;
 	grid-row: 1/2;
 	grid-column: 1/2;
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
@@ -1283,16 +1284,30 @@
 .beige-bg {
 	background: var(--sorting-title-backgroung);
 }
+.filter-border {
+	border: none;
+	border-bottom: 1px solid var(--radio-button-color);
+}
 .filter-header {
 	padding: 10px 10px 10px 18px;
-	margin-bottom: 14px;
+}
+.filter-title {
+	font-weight: 700;
+	font-size: var(--fz-filter-title);
+	line-height: var(--lh-filter-title);
+}
+.filter-price-range{
+	padding: 14px 0 25px 0;
 }
 /* price range */
 .filter-range {
+	width: 220px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 80px;
+	border-radius: 3px;
+	margin-bottom: 9px;
 }
 .filter-full-range {
 	width: 180px;
@@ -1317,28 +1332,26 @@
 	right: 0;
 	transform: translate(50%, -10px);
 }
-.field-number {
+/* price input */
+.filter-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.filter-price-input {
+	box-sizing: border-box;
+	width: 95px;
 	border: none;
+	border-radius: 3px;
 	background: var(--sorting-title-backgroung);
 	text-align: center;
+	padding: 10px;
 }
 .filter-manufacturer-item,
 .filter-charge-item {
 	margin: 0 0 20px 0;
 }
-.filter-title {
-	font-weight: 700;
-	font-size: var(--fz-filter-title);
-	line-height: var(--lh-filter-title);
-}
-.filter-area {
-	border: 0;
-	padding: 0;
-	border-bottom: 1px solid var(--radio-button-color);
-}
-.filter-show-button {
-	border: 1px solid var(--filter-show-button-border);
-}
+
 .filter-manufacturer-label {
 	padding: 0 0 0 35px;
 }
@@ -1404,6 +1417,9 @@
 .radio:checked:hover + * .radio-inner,
 .radio:checked:hover + * .radio-inner {
 	background: var(--radio-button-color-hover);
+}
+.filter-show-button {
+	border: 1px solid var(--filter-show-button-border);
 }
 /* -------pagination------- */
 .pagination-list {
