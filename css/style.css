@@ -232,6 +232,8 @@
 .header {
 	background: var(--header-background);
 	padding: 0 0 60px 0;
+}
+.header-index {
 	margin-bottom: 59px;
 }
 .header-top {
@@ -390,6 +392,7 @@
 	color: var(--middle-menu-phone-text);
 	border: 3px solid var(--x-white);
 	padding: 8px;
+	margin-bottom: 3px;
 }
 .header-phone:hover {
 	color: var(--x-black);
@@ -1082,8 +1085,8 @@
 	top: 10px;
 	right: 10px;
 }
-.close-icon{
-	fill:var(--button-color);
+.close-icon {
+	fill: var(--button-color);
 }
 /* ----------catalog.html---------- */
 /* color compare for catalog.html */
@@ -1128,16 +1131,25 @@
 	--fz-cart: var(--fz7);
 	--lh-cart: var(--lh7);
 }
+/* -------header catalog.html------- */
+.header-catalog {
+	margin-bottom: 21px;
+}
 /* authorization */
 .red {
 	background: var(--button-color);
 }
 .authorization-field {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 299px;
 	background: var(--x-white);
+	padding: 12px 17px 12px 15px;
+	margin-bottom: 7px;
 }
-.name {
-	font-size: var(--fz-authorization-name);
-	line-height: var(--lh-authorization-name);
+.authorization-field:active {
+	color: var(--authorization-action);
 }
 .authorization-icon {
 	fill: var(--authorization-icon-fill);
@@ -1146,17 +1158,19 @@
 .authorization-field:focus .authorization-icon {
 	fill: var(--authorization-icon-fill-hover);
 }
-.name:active {
-	color: var(--authorization-action);
-}
-.authorization-field:active {
-	color: var(--authorization-action);
-}
 .authorization-field:active .authorization-icon {
 	fill: var(--authorization-action);
 }
+.authorization-name {
+	font-size: var(--fz-authorization-name);
+	line-height: var(--lh-authorization-name);
+}
+.authorization-name:active {
+	color: var(--authorization-action);
+}
 .authorization-list {
 	display: flex;
+	justify-content: center;
 	font-size: var(--fz-personal-data);
 	line-height: var(--lh-personal-data);
 	color: var(--personal-data);
@@ -1165,7 +1179,7 @@
 	position: relative;
 }
 .authorization-item:not(:last-child) {
-	margin: 0 30px 0 0;
+	margin-right: 30px;
 }
 .authorization-item:not(:last-child):after {
 	content: url("../img/icon/icon-blue-bullet.svg");
@@ -1179,22 +1193,23 @@
 .authorization-item:active {
 	color: var(--authorization-action);
 }
-/* bread crumbs */
-.bread-crumbs-container {
-	display: flex;
-}
-.bread-home-icon {
-	fill: var(--home-icon-fill);
-}
-.bread-home-icon:hover {
-	opacity: 0.3;
-}
+/* -------bread crumbs------- */
 .navigation-text {
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 	font-size: var(--fz-crumbs);
 	line-height: var(--lh-crumbs);
 	text-transform: uppercase;
 	color: var(--x-black);
+}
+.bread-crumbs-container {
+	display: flex;
+	margin-bottom: 20px;
+}
+.bread-home-icon {
+	fill: var(--home-icon-fill);
+}
+.bread-home-icon:hover {
+	opacity: 0.3;
 }
 .bread-item:not(:last-child) {
 	margin: 0 40px 0 0;
@@ -1211,6 +1226,15 @@
 .catalog-title {
 	color: var(--catalog-title-color);
 	background: var(--catalog-sec-background);
+	padding: 29px 29px 30px 29px;
+	margin-bottom: 20px;
+}
+/* catalog grid container */
+.catalog-container {
+	display: grid;
+	grid-template-columns: 220px 1fr;
+	grid-template-rows: auto min-content;
+	column-gap: 20px;
 }
 /* sorting */
 .beige-bg {
@@ -1241,8 +1265,15 @@
 .sorting-button:checked + .sorting-icon {
 	fill: var(--checked-color);
 }
+/* catalog */
+.catalog-catalog {
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
 /* filter */
 .filter {
+	grid-row: 1/2;
+	grid-column: 1/2;
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: var(--fz-filter-item);
@@ -1251,6 +1282,10 @@
 }
 .beige-bg {
 	background: var(--sorting-title-backgroung);
+}
+.filter-header {
+	padding: 10px 10px 10px 18px;
+	margin-bottom: 14px;
 }
 /* price range */
 .filter-range {
@@ -1299,7 +1334,7 @@
 .filter-area {
 	border: 0;
 	padding: 0;
-	border-bottom: 1px solid var(--x-transparent-black);
+	border-bottom: 1px solid var(--radio-button-color);
 }
 .filter-show-button {
 	border: 1px solid var(--filter-show-button-border);
@@ -1370,10 +1405,11 @@
 .radio:checked:hover + * .radio-inner {
 	background: var(--radio-button-color-hover);
 }
-/* pagination */
+/* -------pagination------- */
 .pagination-list {
+	grid-row: 2/3;
+	grid-column: 2/3;
 	display: flex;
-	justify-content: center;
 }
 .pagination-item {
 	padding: 10px 15px 10px 15px;
