@@ -236,11 +236,12 @@
 .header-index {
 	margin-bottom: 59px;
 }
-.header-top {
+.header-top{
+	background: var(--top-user-menu);
+}
+.header-top .wrapper{
 	display: grid;
 	grid-template-columns: min-content min-content 1fr min-content;
-	background: var(--top-user-menu);
-	margin-bottom: 37.5px;
 }
 .header-top-menu {
 	grid-row: 1/2;
@@ -342,6 +343,7 @@
 .ordered-button {
 	grid-row: 1/2;
 	grid-column: 4/5;
+	box-sizing: border-box;
 	width: 150px;
 	text-align: center;
 	background: var(--ordered-button-background);
@@ -356,13 +358,16 @@
 	color: var(--odrered-button-text-active);
 }
 /* header middle */
-.header-middle {
+.header-middle{
+	padding: 37px 0 40px 0;
+}
+.header-middle .wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 300px);
 	column-gap: 20px;
 	box-sizing: border-box;
 	color: var(--x-black);
-	margin-bottom: 44px;
+	
 }
 .header-title {
 	grid-row: 1/2;
@@ -446,6 +451,7 @@
 }
 /* navigation menu*/
 .navigation-menu {
+	
 	background: var(--navigation-menu-backgroung);
 	box-shadow: 0px -5px 0px 0px var(--navigation-menu-shadow) inset;
 }
@@ -1481,11 +1487,42 @@
 	background: var(--catalog-sec-background);
 	padding: 64px 0 68px 0;
 }
-/* cart */
-.cart-footer {
+.about-perforator .title-section{
+	margin-bottom: 25px;
+}
+/* -------modal window cart------- */
+.cart-window{
+	width: 620px;
+	height: 283px;
 	font-size: var(--fz-cart);
 	line-height: var(--lh-cart);
+	display: flex;
+	flex-direction: column;
+}
+.cart-message{
+	flex:1 1 auto;
+}
+.cart-window .button-close{
+	order:-1;
+	align-self: flex-end;
+	transform: translate(-11px, 11px);
+}
+.cart-footer {
+	display: flex;
+	justify-content: space-between;
 	background: var(--cart-footer-background);
+	padding: 37px 114px;
+}
+.cart-message{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.message-icon{
+	margin-right: 30px;
+}
+.message{
+	order:1;
 }
 .cart-button {
 	font-size: var(--fz-button-new);
@@ -1498,12 +1535,10 @@
 .cart-button:focus {
 	background: var(--x-transparent-grey03);
 }
-.cart .button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+.cart-window .button {
 	width: 192px;
 	height: 38px;
+	padding: 11px 9px;
 }
 .visually-hidden {
 	position: absolute;
