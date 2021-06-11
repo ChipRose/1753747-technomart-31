@@ -36,6 +36,7 @@
 	--x-red: rgb(238, 54, 67);
 	--x-dark-red: rgb(202, 44, 55);
 	--x-deep-dark-red: rgb(186, 39, 50);
+	--x-shadow-red:rgb(181,41,51);
 	/* green */
 	--x-green: rgb(99, 166, 62);
 	--x-bright-green: rgb(95, 187, 45);
@@ -65,7 +66,7 @@
 	--logo-background: var(--x-red);
 	--logo-background-hover: var(--x-dark-red);
 	--logo-background-active: var(--x-deep-dark-red);
-	--logo-shadow: var(--x-shadow-black);
+	--logo-shadow:var(--x-shadow-red);
 	--top-user-menu-icon: var(--x-transparent-white03);
 	--top-user-menu-item-active: var(--x-deep-dark-blue);
 	--ordered-button-background: var(--x-green);
@@ -259,7 +260,7 @@
 	grid-column: 1/2;
 	width: 220px;
 	background: var(--logo-background);
-	box-shadow: 0px -5px 0px 0px var(--x-shadow-black) inset;
+	box-shadow: 0px 5px 0px 0px var(--logo-shadow);
 	display: flex;
 	justify-content: center;
 	align-items: center;
