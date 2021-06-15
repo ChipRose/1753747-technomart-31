@@ -227,6 +227,7 @@
 	font-weight: 400;
 }
 .card-border {
+	box-sizing: border-box;
 	border: 1px solid var(--card-border-color);
 }
 /* -------header------- */
@@ -508,7 +509,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	transform-origin: bottom right;
-	transform: translate(0, 40px) rotate(45deg);
+	transform: translate(0, 38px) rotate(45deg);
 	color: var(--x-white);
 	background: var(--new-label-background-color);
 	box-sizing: border-box;
@@ -656,12 +657,14 @@
 }
 /* -------products------- */
 .popular-products {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 .products-list {
 	color: var(--x-black);
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between; 
+	
 }
 .product-item {
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
@@ -677,6 +680,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 6px 18px 21px 18px;
+	margin-bottom: 20px;
 }
 .product-item:hover,
 .product-item:active {
@@ -699,10 +703,10 @@
 .price-new {
 	position: relative;
 	box-sizing: border-box;
-	width: 121px;
+	width: 122px;
 	color: var(--x-white);
 	background: var(--x-red);
-	border-radius: 3px 0 0 3px;
+	border-radius: 4px 0 0 4px;
 	padding: 10px;
 }
 .price-new:after {
@@ -773,13 +777,24 @@
 }
 /* -------manufacturers------- */
 .popular-manufacturers {
-	margin-bottom: 70px;
+	margin-bottom:50px;
 }
 .popular-manufacturers .section-head {
 	margin-bottom: 20px;
 }
+
+.manufacturers-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .manufacturer-item {
-	text-align: center;
+	width: 220px;
+	height: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
 .manufacturer-item:hover,
 .manufacturer-item:focus {
@@ -797,6 +812,9 @@
 }
 .services .title-section {
 	margin-bottom: 25px;
+}
+.services .title-subsection {
+	margin-bottom: 28px;
 }
 .page-text {
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
@@ -816,14 +834,14 @@
 }
 .background-credit {
 	display: none;
-	background: url("../img/service/service-credit.png") right top no-repeat, transparent;
+	background: url("../img/service/service-credit.png") right 10px no-repeat, transparent;
 }
 .background-delivery {
-	background: url("../img/service/service-delivery.png") right top no-repeat, transparent;
+	background: url("../img/service/service-delivery.png") right 10px no-repeat, transparent;
 }
 .background-guarantee {
 	display: none;
-	background: url("../img/service/service-guarantee.png") right top no-repeat, transparent;
+	background: url("../img/service/service-guarantee.png") right 10px no-repeat, transparent;
 }
 .services-list {
 	height: 285px;
@@ -890,6 +908,7 @@
 	grid-column: 1/7;
 	display: flex;
 	flex-direction: column;
+	min-height: 356px;
 }
 .company-text {
 	flex: 1 0 auto;
@@ -897,11 +916,14 @@
 .about-company .page-text:not(:last-of-type) {
 	margin-bottom: 27px;
 }
+.about-company .page-text:last-of-type {
+	margin-bottom: 3px;
+}
 .about-company .title-section {
 	margin-bottom: 24px;
 }
-.companies-list {
-	margin-bottom: 20px;
+.companies-list:not(:last-of-type) {
+	margin-bottom: 13px;
 }
 .company-item {
 	background: url("../img/icon/icon-bullet.svg") 0 50% no-repeat, transparent;
@@ -938,21 +960,51 @@
 }
 .footer-top {
 	display: grid;
-	grid-template-columns: 350px 1fr;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: min-content min-content;
 	row-gap: 25px;
 	column-gap: 20px;
+	padding: 0 0 15px 0;
 }
 .footer-top .logo {
-	display: block;
+	box-sizing: border-box;
 	grid-row: 1/2;
 	grid-column: 1/2;
 	text-align: center;
 	align-self: start;
-	padding: 20px 0 25px 0;
+	padding: 21px 20px 20px 20px;
+	width: 220px;
+}
+.footer-navigation{
+	grid-row: 1/2;
+	grid-column: 2/3;
+	display: flex;
+	justify-content: flex-end;
+}
+.footer .contacts-container{
+	grid-row: 2/3;
+	grid-column: 1/2;
+	width: 350px;
+	padding: 3px 0 0 2px;
+}
+.footer-list{
+	grid-row: 2/3;
+	grid-column: 2/3;
+	display: flex;
+	justify-content: flex-end;
 }
 .footer-item {
 	font-size: var(--fz-footer-item);
 	line-height: var(--lh-footer-item);
+}
+.footer-item-navigation{
+	padding: 37px 0 3px 0;
+}
+.footer-item-list{
+	padding: 6px 0 6px 0;
+}
+.footer-item:not(:last-child){
+	margin-right: 58px;
 }
 .yellow {
 	color: var(--footer-second-menu-text);
@@ -971,7 +1023,7 @@
 }
 .footer-bottom {
 	background: var(--bottom-footer-background);
-	padding: 25px 0 25px 0;
+	padding: 34px 0 28px 0;
 }
 .footer-bottom .wrapper {
 	display: flex;
