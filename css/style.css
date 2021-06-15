@@ -603,6 +603,7 @@
 /* slider */
 .slider-img {
 	position: relative;
+	display: none;
 }
 .slider .img {
 	min-width: 100%;
@@ -634,8 +635,12 @@
 	justify-content: space-between;
 	align-items: flex-start;
 }
-.slider-button-container .button-main {
+.slider-img .button-main {
+	position: absolute;
+	z-index: 2;
 	width: 192px;
+	bottom: 27px;
+	left: 24px;
 }
 /* -------sections head------- */
 .section-head {
@@ -782,7 +787,6 @@
 .popular-manufacturers .section-head {
 	margin-bottom: 20px;
 }
-
 .manufacturers-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -1623,4 +1627,7 @@
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+}
+.active{
+	display: block;
 }
