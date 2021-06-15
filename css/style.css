@@ -689,7 +689,6 @@
 	overflow: hidden;
 	width: 220px;
 	min-height: 318px;
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -722,14 +721,14 @@
 	line-height: var(--lh-price);
 	margin-bottom: auto;
 }
+.price-old {
+	color: var(--old-price-color);
+}
 .price-new {
 	width: 100%;
 	background: url("../img/icon/red-button.svg") 27px 0 no-repeat;
 	color: var(--x-white);
 	padding: 10px 0 10px 0;
-}
-.price-old {
-	color: var(--old-price-color);
 }
 /* product user menu  */
 .user-menu-hover {
