@@ -204,8 +204,8 @@
 	--lh-footer-address: 1.2;
 	--fz-authorization-name: 21px;
 	--lh-authorization-name: 1;
-	--fz-authorization-menu:16px;
-	--lh-authorization-menu:1.12;
+	--fz-authorization-menu: 16px;
+	--lh-authorization-menu: 1.12;
 	--fz-bread-crumbs-sorting: 13px;
 	--lh-bread-crumbs-sorting: 1.38;
 	--fz-filter-title: 17px;
@@ -1547,7 +1547,7 @@
 	text-align: center;
 	padding: 11px;
 }
-.filter-price-input::placeholder{
+.filter-price-input::placeholder {
 	font-size: var(--fz-filter-input);
 	line-height: var(--lh-filter-input);
 }
