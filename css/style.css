@@ -334,7 +334,7 @@
 .search-field:focus + * .search-icon {
 	fill: var(--x-red);
 }
-.search-field:focus + .search-img {
+.search-field:focus + .search-icon {
 	background: var(--x-white);
 }
 .search-field:focus::placeholder {
@@ -345,6 +345,7 @@
 	background: var(--x-white);
 }
 .search-img {
+	display: block;
 	padding: 12px 0 0 17px;
 }
 /* user menu top */
@@ -486,11 +487,9 @@
 }
 .header-button-login {
 	display: flex;
-	align-items: center;
-	box-sizing: border-box;
-	width: 121px;
+	align-items: center;	
 	margin-right: 10px;
-	padding: 0px 7px 0 20px;
+	padding: 0px 27px 0 20px;
 }
 .header-button-registration {
 	width: 150px;
@@ -906,7 +905,7 @@
 }
 .background-delivery {
 	display: none;
-	background: url("../img/service/service-delivery.png") right 9px no-repeat, transparent;
+	background: url("../img/service/service-delivery.png") right 9px no-repeat;
 }
 .background-guarantee {
 	display: none;
