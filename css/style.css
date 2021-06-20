@@ -215,11 +215,13 @@
 	--fz-filter-item: 15px;
 	--lh-filter-item: 1.27;
 }
+.page {
+	height: 100%;
+}
 .page-body {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	min-width: 940px;
-	min-height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
@@ -237,6 +239,8 @@
 	cursor: pointer;
 	color: inherit;
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 .list-clear {
 	list-style: none;
@@ -248,10 +252,12 @@
 	background: none;
 	cursor: pointer;
 	padding: 0;
+	margin: 0;
 }
 .text-clear {
-	margin: 0;
 	font-weight: 400;
+	margin: 0;
+	padding: 0;
 }
 .card-border {
 	box-sizing: border-box;
@@ -325,7 +331,7 @@
 	grid-column: 2/3;
 	background: inherit;
 	border-width: 0;
-	height: 100%;
+	min-height: 100%;
 }
 .search-field::placeholder {
 	color: var(--x-white);
@@ -368,7 +374,7 @@
 	align-items: center;
 	min-height: 100%;
 	width: 150px;
-	padding: 8px 0px 8px 0px;
+	padding: 8px 0px;
 }
 .user-menu:hover .icon,
 .user-menu:focus .icon {
@@ -487,7 +493,7 @@
 }
 .header-button-login {
 	display: flex;
-	align-items: center;	
+	align-items: center;
 	margin-right: 10px;
 	padding: 0px 27px 0 20px;
 }
@@ -978,7 +984,7 @@
 	min-height: 356px;
 }
 .company-text {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 .about-company .page-text:not(:last-of-type) {
 	margin-bottom: 27px;
@@ -1005,14 +1011,14 @@
 	flex-direction: column;
 }
 .company-contacts .page-text {
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 /* company contacts */
 .company-contacts .map {
 	margin-bottom: 25px;
 }
 .map-img {
-	min-width: 100%;
+	max-width: 100%;
 }
 /* information buttons */
 .button-company {
