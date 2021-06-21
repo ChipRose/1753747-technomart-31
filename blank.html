@@ -235,10 +235,10 @@
 				<section class="checkbox-style">
 					<h2 class="text-clear section-head title-section">Чекбоксы и радио-кнопки</h2>
 					<fieldset class="fieldset-clear">
-						<ul class="list-clear checkbox-list">
-							<li class="checkbox-item">
-								<label class="checkbox-label">
-									<input class="visually-hidden checkbox-input" type="checkbox" />
+						<ul class="list-clear filter-manufacturer-list">
+							<li class="filter-manufacturer-item">
+								<label class="filter-manufacturer-label">
+									<input class="visually-hidden checkbox-input" type="checkbox" name="bosch" checked />
 									<svg width="27" height="23" viewBox="0 0 27 23" xmlns="http://www.w3.org/2000/svg">
 										<path
 											class="checkbox-off"
@@ -252,12 +252,12 @@
 											d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
 										/>
 									</svg>
-									<span class="checkbox-name">1 Пункт</span>
+									<span class="filter-manufacturer-name">Bosch</span>
 								</label>
 							</li>
-							<li class="checkbox-item">
-								<label class="checkbox-label">
-									<input class="visually-hidden checkbox-input" type="checkbox" checked />
+							<li class="filter-manufacturer-item">
+								<label class="filter-manufacturer-label">
+									<input class="visually-hidden checkbox-input" type="checkbox" name="interskol" />
 									<svg width="27" height="23" viewBox="0 0 27 23" xmlns="http://www.w3.org/2000/svg">
 										<path
 											class="checkbox-off"
@@ -271,12 +271,12 @@
 											d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
 										/>
 									</svg>
-									<span class="checkbox-name">2 Пункт</span>
+									<span class="filter-manufacturer-name">Интерскол</span>
 								</label>
 							</li>
-							<li class="checkbox-item">
-								<label class="checkbox-label">
-									<input class="visually-hidden checkbox-input" type="checkbox" checked disabled />
+							<li class="filter-manufacturer-item">
+								<label class="filter-manufacturer-label">
+									<input class="visually-hidden checkbox-input" type="checkbox" name="makita" checked disabled />
 									<svg width="27" height="23" viewBox="0 0 27 23" xmlns="http://www.w3.org/2000/svg">
 										<path
 											class="checkbox-off"
@@ -290,12 +290,12 @@
 											d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
 										/>
 									</svg>
-									<span class="checkbox-name">3 Пункт</span>
+									<span class="filter-manufacturer-name">Makita</span>
 								</label>
 							</li>
-							<li class="checkbox-item">
-								<label class="checkbox-label">
-									<input class="visually-hidden checkbox-input" type="checkbox" disabled />
+							<li class="filter-manufacturer-item">
+								<label class="filter-manufacturer-label">
+									<input class="visually-hidden checkbox-input" type="checkbox" name="dewalt" disabled />
 									<svg width="27" height="23" viewBox="0 0 27 23" xmlns="http://www.w3.org/2000/svg">
 										<path
 											class="checkbox-off"
@@ -309,7 +309,7 @@
 											d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
 										/>
 									</svg>
-									<span class="checkbox-name">4 Пункт</span>
+									<span class="filter-manufacturer-name">Dewalt</span>
 								</label>
 							</li>
 						</ul>
@@ -320,21 +320,21 @@
 								<label>
 									<input class="visually-hidden radio" type="radio" name="filter-accumulator" value="accumulator" checked />
 									<span class="radio-button"><span class="radio-inner"></span></span>
-									<span class="checkbox-name">Аккумуляторные</span>
+									<span class="filter-manufacturer-name">Аккумуляторные</span>
 								</label>
 							</li>
 							<li class="filter-charge-item">
 								<label>
 									<input class="visually-hidden radio" type="radio" name="filter-accumulator" value="electricity" />
 									<span class="radio-button"><span class="radio-inner"></span></span>
-									<span class="checkbox-name">Сетевые</span>
+									<span class="filter-manufacturer-name">Сетевые</span>
 								</label>
 							</li>
 							<li class="filter-charge-item">
 								<label>
 									<input class="visually-hidden radio" type="radio" name="filter-accumulator" disabled value="accumulator" />
 									<span class="radio-button"><span class="radio-inner"></span></span>
-									<span class="checkbox-name">Аккумуляторные</span>
+									<span class="filter-manufacturer-name">Аккумуляторные</span>
 								</label>
 							</li>
 						</ul>
