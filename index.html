@@ -408,36 +408,30 @@
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 					<div class="services-container">
-						<ul class="list-clear service-buttons-list">
-							<li class="service-button-item">
-								<label>
-									<input class="visually-hidden services-radio" checked type="radio" name="service" />
-									<span class="service-label">Доставка</span>
-								</label>
-							</li>
-							<li class="service-button-item">
-								<label>
-									<input class="visually-hidden services-radio" type="radio" name="service" />
-									<span class="service-label">Гарантия</span>
-								</label>
-							</li>
-							<li class="service-button-item">
-								<label>
-									<input class="visually-hidden services-radio" type="radio" name="service" />
-									<span class="service-label">Кредит</span>
-								</label>
-							</li>
-						</ul>
-						<ul class="list-clear services-list">
-							<li class="service-item background-delivery active">
+						<input class="visually-hidden services-radio delivery-button-check" checked type="radio" name="service" id="delivery"/>
+						<input class="visually-hidden services-radio guarantee-button-check" type="radio" name="service" id="guarantee"/>
+						<input class="visually-hidden services-radio credit-button-check" type="radio" name="service" id="credit"/>
+						<div class="service-buttons-list">
+							<label for ="delivery" class="service-button-item">
+								<span class="service-label delivery-label">Доставка</span>
+							</label>
+							<label  for ="guarantee" class="service-button-item">
+								<span class="service-label guarantee-label">Гарантия</span>
+							</label>
+							<label for ="credit"  class="service-button-item">
+								<span class="service-label credit-label">Кредит</span>
+							</label>
+						</div>
+						<div class="services-list">
+							<div class="service-item background-delivery">
 								<h3 class="text-clear title-section title-subsection dark-blue">Доставка</h3>
 								<p class="text-clear page-text">
 									Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br />
 									Ведь мы неплохо заработаем, <br />
 									поднимая его на ваш этаж!
 								</p>
-							</li>
-							<li class="service-item background-guarantee">
+							</div>
+							<div class="service-item background-guarantee">
 								<h3 class="text-clear title-section title-subsection dark-blue">Гарантия</h3>
 								<p class="text-clear page-text">
 									Если купленный у нас товар поломается или заискрит, <br />
@@ -446,16 +440,16 @@
 									гарантии. Мы обменяем сгоревший товар на новый. <br />
 									Дом уж восстановите как-нибудь сами.
 								</p>
-							</li>
-							<li class="service-item background-credit">
+							</div>
+							<div class="service-item background-credit">
 								<h3 class="text-clear title-section title-subsection dark-blue">Кредит</h3>
 								<p class="text-clear page-text">
 									Залезть в долговую яму стало проще! <br />
 									Кредитные консультанты придут вам на помощь.
 								</p>
 								<a class="link-clear button-main" href="blank.html">Отправить заявку</a>
-							</li>
-						</ul>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</section>

@@ -964,15 +964,19 @@
 	display: none;
 	background: url("../img/service/service-guarantee.png") right 10px no-repeat, transparent;
 }
+.background-credit .page-text{
+	margin-bottom: 26.5px;
+}
+
 .services-list {
 	box-sizing: border-box;
-	height: 285px;
+	height: 331px;
 	grid-row: 1/2;
 	grid-column: 2/3;
 	padding: 0 0 0 20px;
 }
 .services-list .page-text {
-	width: 283px;
+	width: 331px;
 }
 .service-buttons-list {
 	grid-row: 1/2;
@@ -981,6 +985,14 @@
 	font-size: var(--fz-service-label);
 	line-height: var(--lh-service-label);
 	font-weight: 700;
+}
+.service-item {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	min-height: 100%;
+}
+.service-item .button-main {
+	width: 195px;
 }
 .services .service-buttons-list:after {
 	content: url("../img/service/service-shadow.png");
@@ -997,21 +1009,25 @@
 	box-shadow: 0px 2px 0px var(--services-tap-drop-shadow), inset 0px 1px 0px var(--services-tap-inner-shadow);
 	padding: 14px 13.5px 18px 22px;
 }
-.services-radio:checked + .service-label {
+.delivery-button-check:checked ~ * .delivery-label,
+.credit-button-check:checked ~ * .credit-label,
+.guarantee-button-check:checked ~ * .guarantee-label{
 	color: var(--services-tab-text-active);
 	background: var(--x-white);
 }
-.services-radio:not(:checked):hover + .service-label,
-.services-radio:not(:checked):focus + .service-label {
+.delivery-button-check:not(:checked):hover ~ * .delivery-label,
+.credit-button-check:not(:checked):hover ~ * .credit-label,
+.guarantee-button-check:not(:checked):hover ~ * .guarantee-label,
+.delivery-button-check:not(:checked):focus ~ * .delivery-label,
+.credit-button-check:not(:checked):focus ~ * .credit-label,
+.guarantee-button-check:not(:checked):focus ~ * .guarantee-label {
 	background: var(--services-tab-background-hover);
-}
-.service-item {
-	grid-row: 1/2;
-	grid-column: 2/3;
-	min-height: 100%;
-}
-.service-item .button-main {
-	width: 195px;
+} 
+/* service checkbox active */
+.guarantee-button-check:checked ~ * .background-guarantee,
+.delivery-button-check:checked ~ * .background-delivery,
+.credit-button-check:checked ~ * .background-credit {
+	display: block;
 }
 /* -------information------- */
 /* technomart company */
