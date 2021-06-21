@@ -1599,6 +1599,20 @@
 .filter-max-point {
 	right: 0;
 }
+/* arrows slider delete */
+.number-input-clear::-webkit-outer-spin-button,
+.number-input-clear::-webkit-inner-spin-button
+{
+	-webkit-appearance: none;
+  margin: 0;
+}
+.number-input-clear{
+	-moz-appearance: textfield;
+}
+.number-input-clear:hover,
+.number-input-clear:focus{
+	-moz-appearance: number-input;
+}
 /* price input */
 .filter-price {
 	display: flex;
