@@ -220,7 +220,17 @@
 							</div>
 						</li>
 						<li class="advertisement-item slider">
-							<div class="slider-img active">
+							<input class="visually-hidden slider-bullet first-bullet" type="radio" name="slider-bullet" id="first-slide" checked />
+							<input class="visually-hidden slider-bullet second-bullet" type="radio" name="slider-bullet" id="second-slide" />
+							<div class="slider-controls">
+								<label class="slide-control-bullet first-label" for="first-slide">
+									<span class="visually-hidden">1 слайд</span>
+								</label>
+								<label class="slide-control-bullet second-label" for="second-slide">
+									<span class="visually-hidden">2 слайд</span>
+								</label>
+							</div>
+							<div class="slider-img first-slide">
 								<div class="text-container">
 									<h3 class="text-clear slider-title">Перфораторы</h3>
 									<p class="text-clear slider-description">Настоящие мужские игрушки</p>
@@ -228,7 +238,7 @@
 								<a class="link-clear button-main" href="catalog.html">Открыть каталог</a>
 								<img class="img" src="img/slider-01/slider-01.jpg" width="620" height="266" alt="Рабочий с перфоратором" />
 							</div>
-							<div class="slider-img">
+							<div class="slider-img second-slide">
 								<div class="text-container">
 									<h3 class="text-clear slider-title">Дрели</h3>
 									<p class="text-clear slider-description">Соседям на радость!</p>
@@ -237,19 +247,17 @@
 								<img class="img" src="img/slider-01/slider-02.jpg" width="620" height="266" alt="Рабочий с дрелью" />
 							</div>
 						</li>
-						<li class="slider-button-container">
-							<div class="prev-next-button">
-								<button class="button-clear button-prev" type="button">
-									<svg width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" fill="white" />
-									</svg>
-								</button>
-								<button class="button-clear button-next" type="button">
-									<svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2.07562 39.0585L0.0774441 37.0107L17.093 19.5639L0.021965 2.06243L2.0211 0.0146294L21.0894 19.5639L2.07562 39.0585Z" fill="white" />
-									</svg>
-								</button>
-							</div>
+						<li class="prev-next-button">
+							<button class="button-clear button-prev" type="button">
+								<svg width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" fill="white" />
+								</svg>
+							</button>
+							<button class="button-clear button-next" type="button">
+								<svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.07562 39.0585L0.0774441 37.0107L17.093 19.5639L0.021965 2.06243L2.0211 0.0146294L21.0894 19.5639L2.07562 39.0585Z" fill="white" />
+								</svg>
+							</button>
 						</li>
 					</ul>
 				</div>
