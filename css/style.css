@@ -1325,30 +1325,31 @@
 /* ----------catalog.html---------- */
 /* color compare for catalog.html */
 :root {
-	--personal-data: var(--x-middle-blue);
-	--personal-data-hover: var(--x-red);
-	--authorization-action: var(--x-extra-light-grey);
-	--authorization-icon-fill: var(--x-extra-light-grey);
-	--authorization-icon-fill-hover: var(--x-dark-grey);
-	--home-icon-fill: var(--x-light-medium-grey);
-	--catalog-sec-background: var(--x-light-blue);
-	--catalog-title-color: var(--x-middle-blue);
-	--pagination-color-border: var(--x-semi-grey);
-	--pagination-color-border-hover: var(--x-extra-light-grey);
-	--pagination-color-border-active: var(--x-red);
-	--page-active-background: var(--x-red);
-	--sorting-title-backgroung: var(--x-beige);
-	--sorting-menu-text: var(--x-transparent-black05);
-	--sorting-underline: var(--x-red);
-	--sorting-icon: var(--x-extra-light-grey);
-	--checked-color: var(--x-red);
-	--cl-filter-checkbutton: var(--x-extra-light-grey);
-	--cl-filter-button-checkbutton-hover: var(--x-light-dark-grey);
-	--cl-filter-button-checkbutton-disabled: var(--x-transparent-light-dark-grey03);
-	--filter-show-button-border: var(--x-semi-grey);
-	--filter-range: var(--x-green);
-	--filter-range-background: var(--x-extra-light-grey);
-	--cart-footer-background: var(--x-midle-beige);
+	--cl-person-data: var(--x-middle-blue);
+	--cl-person-data-hover: var(--x-red);
+	--cl-auth-active: var(--x-extra-light-grey);
+	--fill-auth-active: var(--x-extra-light-grey);
+	--fill-auth-icon: var(--x-extra-light-grey);
+	--fill-auth-icon-hover: var(--x-dark-grey);
+	--fill-home-icon: var(--x-light-medium-grey);
+	--bg-catalog-sec: var(--x-light-blue);
+	--cl-catalog-title: var(--x-middle-blue);
+	--brd-pagination: var(--x-semi-grey);
+	--brd-pagination-hover: var(--x-extra-light-grey);
+	--brd-pagination-active: var(--x-red);
+	--bg-page-active: var(--x-red);
+	--bg-sorting-title: var(--x-beige);
+	--cl-sorting-menu: var(--x-transparent-black05);
+	--cl-sorting-underline: var(--x-red);
+	--fill-sorting-icon: var(--x-extra-light-grey);
+	--cl-fill-checked: var(--x-red);
+	--cl-fill-filter-checkbox: var(--x-extra-light-grey);
+	--cl-fill-filter-checkbox-hover: var(--x-light-dark-grey);
+	--cl-fill-filter-checkbox-disabled: var(--x-transparent-light-dark-grey03);
+	--brd-filter-show-button: var(--x-semi-grey);
+	--bg-filter-bar: var(--x-green);
+	--bg-filter-full-range: var(--x-extra-light-grey);
+	--bg-cart-footer: var(--x-midle-beige);
 }
 /* -------header catalog.html------- */
 .header-catalog {
@@ -1367,31 +1368,31 @@
 	margin-bottom: 6px;
 }
 .authorization-field:active {
-	color: var(--authorization-action);
+	color: var(--cl-auth-active);
 }
 .authorization-icon {
-	fill: var(--authorization-icon-fill);
+	fill: var(--fill-auth-icon);
 }
 .authorization-field:hover .authorization-icon,
 .authorization-field:focus .authorization-icon {
-	fill: var(--authorization-icon-fill-hover);
+	fill: var(--fill-auth-icon-hover);
 }
 .authorization-field:active .authorization-icon {
-	fill: var(--authorization-action);
+	fill: var(--fill-auth-active);
 }
 .authorization-name {
 	font-size: var(--fz-authorization-name);
 	line-height: var(--lh-authorization-name);
 }
 .authorization-name:active {
-	color: var(--authorization-action);
+	color: var(--cl-auth-active);
 }
 .authorization-list {
 	display: flex;
 	justify-content: center;
 	font-size: var(--fz-authorization-menu);
 	line-height: var(--lh-authorization-menu);
-	color: var(--personal-data);
+	color: var(--cl-person-data);
 }
 .authorization-item {
 	position: relative;
@@ -1406,10 +1407,10 @@
 }
 .authorization-item:hover,
 .authorization-item:focus {
-	color: var(--personal-data-hover);
+	color: var(--cl-person-data-hover);
 }
 .authorization-item:active {
-	color: var(--authorization-action);
+	color: var(--cl-auth-active);
 }
 /* -------bread crumbs------- */
 .navigation-text {
@@ -1424,7 +1425,7 @@
 	margin-bottom: 20px;
 }
 .bread-home-icon {
-	fill: var(--home-icon-fill);
+	fill: var(--fill-home-icon);
 }
 .bread-home-icon:hover {
 	opacity: 0.3;
@@ -1442,14 +1443,14 @@
 	opacity: 0.3;
 }
 .catalog-title {
-	color: var(--catalog-title-color);
-	background: var(--catalog-sec-background);
+	color: var(--cl-catalog-title);
+	background: var(--bg-catalog-sec);
 	padding: 30px 29px 30px 29px;
 	margin-bottom: 20px;
 }
 /* sorting */
 .beige-bg {
-	background: var(--sorting-title-backgroung);
+	background: var(--bg-sorting-title);
 }
 .sorting-title {
 	box-sizing: border-box;
@@ -1464,17 +1465,17 @@
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	color: var(--sorting-menu-text);
+	color: var(--cl-sorting-menu);
 	margin-right: 35px;
 }
 .sorting-type-item:not(:last-child) {
 	margin-right: 65px;
 }
 .sorting-underline {
-	border-bottom: 1px dotted var(--sorting-underline);
+	border-bottom: 1px dotted var(--cl-sorting-underline);
 }
 .sorting-icon {
-	fill: var(--sorting-icon);
+	fill: var(--fill-sorting-icon);
 }
 .sorting-button-list {
 	flex: 0 0 45px;
@@ -1489,14 +1490,14 @@
 .sorting-lable:hover,
 .sorting-lable:focus {
 	color: var(--x-black);
-	border-bottom: 1px solid var(--sorting-underline);
+	border-bottom: 1px solid var(--cl-sorting-underline);
 }
 .sorting-checkbox:checked + .sorting-lable {
-	color: var(--checked-color);
+	color: var(--cl-fill-checked);
 	border: none;
 }
 .sorting-button:checked + .sorting-icon {
-	fill: var(--checked-color);
+	fill: var(--cl-fill-checked);
 }
 /* catalog */
 .catalog-container {
@@ -1561,13 +1562,13 @@
 .filter-full-range {
 	width: 100%;
 	height: 2px;
-	background: var(--filter-range-background);
+	background: var(--bg-filter-full-range);
 }
 .filter-bar {
 	width: 90%;
 	left: 0;
 	height: 2px;
-	background: var(--filter-range);
+	background: var(--bg-filter-bar);
 	position: relative;
 }
 .filter-min-point,
@@ -1609,7 +1610,7 @@
 	width: 95px;
 	border: none;
 	border-radius: 3px;
-	background: var(--sorting-title-backgroung);
+	background: var(--bg-sorting-title);
 	text-align: center;
 	padding: 11px;
 }
@@ -1676,7 +1677,7 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	border: 4px solid var(--cl-filter-checkbutton);
+	border: 4px solid var(--cl-fill-filter-checkbox);
 }
 .radio-inner {
 	opacity: 0;
@@ -1686,27 +1687,27 @@
 }
 .radio:hover + .radio-button,
 .radio:focus + .radio-button {
-	border-color: var(--cl-filter-button-checkbutton-hover);
+	border-color: var(--cl-fill-filter-checkbox-hover);
 }
 .radio:disabled + .radio-button {
-	border-color: var(--cl-filter-button-checkbutton-disabled);
+	border-color: var(--cl-fill-filter-checkbox-disabled);
 }
 .radio:hover + * .radio-inner,
 .radio:focus + * .radio-inner {
-	background: var(--cl-filter-button-checkbutton-hover);
+	background: var(--cl-fill-filter-checkbox-hover);
 }
 .radio:checked + * .radio-inner {
 	opacity: 1;
-	background: var(--cl-filter-checkbutton);
+	background: var(--cl-fill-filter-checkbox);
 }
 .radio:checked:hover + * .radio-inner {
-	background: var(--cl-filter-button-checkbutton-hover);
+	background: var(--cl-fill-filter-checkbox-hover);
 }
 /* filter button */
 .filter-show-button {
 	width: 220px;
 	padding: 10px;
-	border: 1px solid var(--filter-show-button-border);
+	border: 1px solid var(--brd-filter-show-button);
 }
 .filter-show-button:hover,
 .filter-show-button:focus {
@@ -1720,7 +1721,7 @@
 	flex-wrap: wrap;
 }
 .pagination-item {
-	border: 1px solid var(--pagination-color-border);
+	border: 1px solid var(--brd-pagination);
 	border-radius: 2px;
 }
 .pagination-item:not(:last-child) {
@@ -1736,15 +1737,15 @@
 .pagination-item:focus,
 .filter-show-button:hover,
 .filter-show-button:focus {
-	border-color: var(--pagination-color-border-hover);
+	border-color: var(--brd-pagination-hover);
 }
 .pagination-item:active,
 .filter-show-button:active {
-	border-color: var(--pagination-color-border-active);
+	border-color: var(--brd-pagination-active);
 }
 .page-active {
 	color: var(--x-white);
-	background: var(--page-active-background);
+	background: var(--bg-page-active);
 	border-width: 0;
 }
 /* -------about------- */
@@ -1776,7 +1777,7 @@
 .cart-footer {
 	display: flex;
 	justify-content: space-between;
-	background: var(--cart-footer-background);
+	background: var(--bg-cart-footer);
 	padding: 37px 114px;
 }
 .cart-message {
@@ -1848,11 +1849,11 @@
 	align-items: center;
 }
 .checkbox-off {
-	fill: var(--cl-filter-checkbutton);
+	fill: var(--cl-fill-filter-check);
 }
 .checkbox-off:hover,
 .checkbox-input:checked:hover + * .checkbox-on {
-	fill: var(--cl-filter-button-checkbutton-hover);
+	fill: var(--cl-fill-filter-check-hover);
 }
 .checkbox-on {
 	fill: none;
@@ -1861,16 +1862,16 @@
 	fill: none;
 }
 .checkbox-input:checked + * .checkbox-on {
-	fill: var(--cl-filter-checkbutton);
+	fill: var(--cl-fill-filter-checkbox);
 }
 .checkbox-input:disabled + * .checkbox-off {
-	fill: var(--cl-filter-button-checkbutton-disabled);
+	fill: var(--cl-fill-filter-checkbox-disabled);
 }
 .checkbox-input:checked:disabled + * .checkbox-off {
 	fill: none;
 }
 .checkbox-input:checked:disabled + * .checkbox-on {
-	fill: var(--cl-filter-button-checkbutton-disabled);
+	fill: var(--cl-fill-filter-checkbox-disabled);
 }
 /* radio button */
 .radio-button-list {
@@ -1896,6 +1897,11 @@
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+	border:0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	overflow: hidden;
 }
 .active {
 	display: block;
