@@ -1230,9 +1230,12 @@
 	box-shadow: 0px 4px 20px var(--modal-window-shadow);
 	border-top: 7px solid var(--modal-window-border);
 	color: var(--x-black);
+	background: var(--x-white);
 }
 .feed-back-window {
 	display: none;
+	z-index: 10;
+	position: fixed;
 	flex-direction: column;
 	width: 620px;
 	min-height: 430px;
@@ -1263,6 +1266,7 @@
 }
 .name-input {
 	margin-right: 20px;
+	margin-bottom: 13px;
 }
 .email-field {
 	order: -1;
@@ -1775,12 +1779,14 @@
 }
 /* -------modal window cart------- */
 .cart-window {
+	position: fixed;
+	display: none;
+	flex-direction: column;
 	width: 620px;
 	height: 283px;
 	font-size: var(--fz-cart);
 	line-height: var(--lh-cart);
-	display: flex;
-	flex-direction: column;
+	background: var(--x-white);
 }
 .cart-message {
 	flex: 1 1 auto;
