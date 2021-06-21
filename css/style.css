@@ -967,10 +967,9 @@
 .background-credit .page-text{
 	margin-bottom: 26.5px;
 }
-
 .services-list {
 	box-sizing: border-box;
-	height: 331px;
+	height: 285px;
 	grid-row: 1/2;
 	grid-column: 2/3;
 	padding: 0 0 0 20px;
@@ -986,6 +985,12 @@
 	line-height: var(--lh-service-label);
 	font-weight: 700;
 }
+.services .service-buttons-list:after {
+	content: url("../img/service/service-shadow.png");
+	position: absolute;
+	right: 0;
+	top: -48px;
+}
 .service-item {
 	grid-row: 1/2;
 	grid-column: 2/3;
@@ -993,12 +998,6 @@
 }
 .service-item .button-main {
 	width: 195px;
-}
-.services .service-buttons-list:after {
-	content: url("../img/service/service-shadow.png");
-	position: absolute;
-	right: 0;
-	top: -48px;
 }
 .service-label {
 	display: block;
@@ -1233,7 +1232,7 @@
 	color: var(--x-black);
 }
 .feed-back-window {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	width: 620px;
 	min-height: 430px;
@@ -1241,22 +1240,19 @@
 .close-button {
 	align-self: flex-end;
 	transform: translate(-11px, 14px);
+	margin-bottom: 4px;;
 }
 .feed-back-form {
-	flex: 1 1 auto;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
-	grid-template-columns: 80px 1fr 80px;
-	grid-template-rows: 1fr min-content;
 }
 .feed-back-fields {
-	grid-row: 1/2;
-	grid-column: 2/3;
-	display: grid;
-	grid-template-columns: repeat(2, 220px);
-	grid-template-rows: 73px 1fr;
-	column-gap: 20px;
-	row-gap: 13px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .feed-back {
 	display: flex;
@@ -1265,11 +1261,17 @@
 .name-field {
 	order: -1;
 }
+.name-input{
+	margin-right: 20px;
+}
 .email-field {
 	order: -1;
 }
 .message-field {
 	order: -1;
+}
+.text-area{
+	margin-bottom: 37px;
 }
 .feed-back-input {
 	box-sizing: border-box;
@@ -1295,19 +1297,15 @@
 	margin-bottom: 11px;
 }
 .feed-back-footer {
-	grid-row: 2/3;
-	grid-column: 1/-1;
 	background: var(--feed-back-footer-background);
-	display: grid;
-	grid-template-columns: 80px 1fr 80px;
-	padding: 37px 0;
+	padding: 37px 80px;
 }
 .feed-back-footer .button-main {
-	grid-row: 2/3;
-	grid-column: 2/3;
+	width: 100%;
 }
 /* -------map window------- */
 .map-window {
+	display: none;
 	width: 943px;
 	min-height: 449px;
 	position: relative;
