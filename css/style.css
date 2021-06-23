@@ -1137,9 +1137,9 @@
 	justify-content: flex-end;
 	flex-wrap: wrap;
 }
-.footer-item:not(:first-child){
+.footer-item:not(:first-child) {
 	margin-left: 58.8px;
-} 
+}
 .footer-item-navigation {
 	padding: 8px 0 3px 0;
 }
