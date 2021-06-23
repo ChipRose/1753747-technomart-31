@@ -31,7 +31,7 @@
 						<label class="search-label">
 							<input class="search-field" type="search" name="search" placeholder="Поиск:" />
 							<div class="search-img">
-								<svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg class="icon search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										fill-rule="evenodd"
 										clip-rule="evenodd"
@@ -582,14 +582,16 @@
 			</button>
 			<form class="feed-back-form" action="https://echo.htmlacademy.ru/" method="post">
 				<div class="feed-back-fields">
-					<label class="feed-back">
-						<input class="feed-back-input name-input" type="text" name="name" placeholder="Имя Фамилия" />
-						<span class="feed-back-label name-field">Ваше имя:</span>
-					</label>
-					<label class="feed-back">
-						<input class="feed-back-input email-input" type="email" name="email" placeholder="email@example.com" />
-						<span class="feed-back-label email-field">Ваш e-mail:</span>
-					</label>
+					<div class="personal-fields">
+						<label class="feed-back">
+							<input class="feed-back-input name-input" type="text" name="name" placeholder="Имя Фамилия" />
+							<span class="feed-back-label name-field">Ваше имя:</span>
+						</label>
+						<label class="feed-back">
+							<input class="feed-back-input email-input" type="email" name="email" placeholder="email@example.com" />
+							<span class="feed-back-label email-field">Ваш e-mail:</span>
+						</label>
+					</div>
 					<label class="feed-back text-area">
 						<textarea class="feed-back-input message-input" placeholder="В свободной форме"></textarea>
 						<span class="feed-back-label message-field">Текст письма:</span>
