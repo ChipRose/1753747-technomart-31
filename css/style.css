@@ -107,24 +107,24 @@
 	--cl-shadow-logo: var(--x-shadow-red);
 	/* header colors */
 	--cl-bg-header: var(--x-light-blue);
-	--cl-bg-top-user-menu: var(--x-dark-blue);
-	--cl-fill-top-header-icon: var(--x-transparent-white03);
-	--top-user-menu-item-active: var(--x-deep-dark-blue);
-	--ordered-button-background: var(--x-green);
-	--ordered-button-background-hover: var(--x-bright-green);
-	--ordered-button-background-active: var(--x-green);
-	--odrered-button-text-active: var(--x-transparent-white05);
-	--middle-menu-text: var(--x-red);
-	--middle-menu-phone-text: var(--x-red);
-	--middle-menu-icon-phone: var(--x-light-grey);
-	--middle-menu-icon-login: var(--x-extra-light-grey);
-	--middle-menu-icon-hover: var(--x-dark-grey);
-	--middle-menu-button-text-hover: var(--x-red);
-	--middle-menu-button-active: var(--x-extra-light-grey);
-	--navigation-menu-backgroung: var(--x-middle-blue);
-	--navigation-menu-shadow: var(--x-dark-blue);
-	--navigation-menu-item-hover: var(--x-dark-blue);
-	--navigation-menu-item-active: var(--x-dark-blue);
+	--cl-bg-header-top-user-menu: var(--x-dark-blue);
+	--cl-fill-header-top-icon: var(--x-transparent-white03);
+	--cl-bg-header-user-menu-item-active: var(--x-deep-dark-blue);
+	--cl-bg-header-top-ordered-button: var(--x-green);
+	--cl-bg-header-top-ordered-button-hover: var(--x-bright-green);
+	--cl-bg-header-top-ordered-button-active: var(--x-green);
+	--cl-txt-header-top-odrered-button-active: var(--x-transparent-white05);
+	--cl-txt-header-middle-title: var(--x-red);
+	--cl-txt-header-middle-phone: var(--x-red);
+	--cl-fill-header-middle-phone-icon: var(--x-light-grey);
+	--cl-fill-header-middle-login-icon: var(--x-extra-light-grey);
+	--cl-fill-header-middle-login-icon-hover: var(--x-dark-grey);
+	--cl-txt-header-middle-menu-button-hover: var(--x-red);
+	--cl-fill-header-middle-login-icon-active: var(--x-extra-light-grey);
+	--cl-bg-navigation-menu: var(--x-middle-blue);
+	--cl-shadow-navigation-menu: var(--x-dark-blue);
+	--cl-bg-navigation-menu-item-hover: var(--x-dark-blue);
+	--cl-bg-navigation-menu-item-active: var(--x-dark-blue);
 	/* advertisement colors */
 	--material-card-background: var(--x-yellow);
 	--tool-card-background: var(--x-blue);
@@ -303,7 +303,7 @@
 	margin-bottom: 59px;
 }
 .header-top {
-	background: var(--cl-bg-top-user-menu);
+	background: var(--cl-bg-header-top-user-menu);
 }
 .header-top .wrapper {
 	display: flex;
@@ -393,7 +393,7 @@
 	flex-wrap: wrap;
 }
 .icon {
-	fill: var(--cl-fill-top-header-icon);
+	fill: var(--cl-fill-header-top-icon);
 	vertical-align: middle;
 	margin-right: 10px;
 }
@@ -411,23 +411,23 @@
 	fill: var(--x-white);
 }
 .user-menu:active {
-	background: var(--top-user-menu-item-active);
+	background: var(--cl-bg-header-user-menu-item-active);
 	opacity: 0.5;
 }
 /* order button */
 .ordered-button {
 	flex: 0 0 150px;
 	text-align: center;
-	background: var(--ordered-button-background);
+	background: var(--cl-bg-header-top-ordered-button);
 	padding: 8px 0px;
 }
 .ordered-button:hover,
 .ordered-button:focus {
-	background: var(--ordered-button-background-hover);
+	background: var(--cl-bg-header-top-ordered-button-hover);
 }
 .ordered-button:active {
-	background: var(--ordered-button-background-active);
-	color: var(--odrered-button-text-active);
+	background: var(--cl-bg-header-top-ordered-button-active);
+	color: var(	--cl-txt-header-top-odrered-button-active);
 }
 /* header middle */
 .header-middle {
@@ -446,7 +446,7 @@
 	font-size: var(--fz-header-text);
 	line-height: var(--lh-header-text);
 	font-style: italic;
-	color: var(--middle-menu-text);
+	color: var(	--cl-txt-header-middle-title);
 	padding: 0 0 0 30px;
 }
 .header .contacts-container {
@@ -459,7 +459,7 @@
 }
 /* phone */
 .icon-phone {
-	fill: var(--middle-menu-icon-phone);
+	fill: var(--cl-fill-header-middle-phone-icon);
 	margin-right: 17px;
 }
 .header-phone {
@@ -471,7 +471,7 @@
 	font-size: var(--fz-header-tel);
 	line-height: var(--lh-header-tel);
 	font-weight: 700;
-	color: var(--middle-menu-phone-text);
+	color: var(--cl-txt-header-middle-phone);
 	border: 3px solid var(--x-white);
 	padding: 5px 10px 8px 35px;
 	margin-bottom: 1px;
@@ -507,21 +507,21 @@
 }
 .header-button:hover .icon-login,
 .header-button:focus .icon-login {
-	fill: var(--middle-menu-icon-hover);
+	fill: var(--cl-fill-header-middle-login-icon-hover);
 }
 .header-button:hover,
 .header-button:focus {
-	color: var(--middle-menu-button-text-hover);
+	color: var(--cl-txt-header-middle-menu-button-hover);
 }
 .header-button:active {
-	color: var(--middle-menu-button-active);
-}
-.header-button:active .icon-login {
-	fill: var(--middle-menu-button-active);
+	color: var(--cl-fill-header-middle-login-icon-active);
 }
 .icon-login {
-	fill: var(--middle-menu-icon-login);
+	fill: var(--cl-fill-header-middle-login-icon);
 	margin-right: 5px;
+}
+.header-button:active .icon-login {
+	fill: var(--cl-fill-header-middle-login-icon-active);
 }
 .header-button-login {
 	display: flex;
@@ -537,8 +537,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background: var(--navigation-menu-backgroung);
-	box-shadow: 0px -5px 0px 0px var(--navigation-menu-shadow) inset;
+	background: var(--cl-bg-navigation-menu);
+	box-shadow: 0px -5px 0px 0px var(--cl-shadow-navigation-menu) inset;
 	padding: 0 25px 0 25px;
 }
 .navigation-link {
@@ -549,10 +549,10 @@
 }
 .navigation-item:hover,
 .navigation-item:focus {
-	background: var(--navigation-menu-item-hover);
+	background: var(--cl-bg-navigation-menu-item-hover);
 }
 .navigation-item:active {
-	background: var(--navigation-menu-item-active);
+	background: var(--cl-bg-navigation-menu-item-active);
 	opacity: 0.5;
 }
 /* -------main buttons------- */
