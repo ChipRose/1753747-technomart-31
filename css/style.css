@@ -1122,6 +1122,7 @@
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
+	margin-top: 30px;
 }
 .footer .contacts-container {
 	grid-row: 2/3;
@@ -1186,14 +1187,13 @@
 	margin-right: 51px;
 }
 .bottom-text:last-of-type {
-	margin-left: auto;
 	margin-right: 13px;
 }
 /* social buttons */
 .buttons-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 118px;
+	margin-right: auto;
 }
 .social-button {
 	align-items: flex-start;
