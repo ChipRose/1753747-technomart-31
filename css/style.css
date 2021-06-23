@@ -1266,7 +1266,7 @@
 	z-index: 10;
 }
 .feed-back-window {
-	display: flex;
+	display: none;
 	position: fixed;
 	bottom: 352px;
 	left: 50%;
