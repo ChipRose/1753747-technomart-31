@@ -171,7 +171,7 @@
 	--form-text-placeholder: var(--x-middle-grey);
 	--form-border-field: var(--x-middle-grey);
 	--feed-back-footer-background: var(--x-extra-light-beige);
-/* color compare for catalog.html */
+	/* color compare for catalog.html */
 	--cl-person-data: var(--x-middle-blue);
 	--cl-person-data-hover: var(--x-red);
 	--cl-auth-active: var(--x-extra-light-grey);
@@ -408,7 +408,7 @@
 }
 .user-menu:hover .icon,
 .user-menu:focus .icon {
-	fill:var(--x-white);
+	fill: var(--x-white);
 }
 .user-menu:active {
 	background: var(--top-user-menu-item-active);
@@ -1095,7 +1095,7 @@
 .company-item:not(:last-child) {
 	margin-bottom: 12px;
 }
-.companies-list{
+.companies-list {
 	margin-bottom: 20px;
 }
 .company-contacts {
@@ -1287,17 +1287,17 @@
 	flex-direction: column;
 	padding: 26px 80px 0 80px;
 }
-.personal-fields{
+.personal-fields {
 	display: flex;
 	flex-wrap: wrap;
 }
 .feed-back {
-	flex:0 0 220px;
+	flex: 0 0 220px;
 	display: flex;
 	flex-direction: column;
 	padding: 13px 0 0 0;
 }
-.feed-back:not(:nth-child(2n)){
+.feed-back:not(:nth-child(2n)) {
 	margin-right: 20px;
 }
 .name-field {
