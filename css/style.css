@@ -205,6 +205,7 @@
 	--cl-bg-filter-price-bar: var(--x-green);
 	--cl-bg-filter-full-price-range: var(--x-extra-light-grey);
 	--cl-bg-pagination-page-active: var(--x-red);
+	--cl-bg-information-sec: var(--x-light-blue);
 	--cl-bg-cart-footer: var(--x-midle-beige);
 }
 /* Variables for font-size */
@@ -838,7 +839,7 @@
 }
 .price-old {
 	color: var(--cl-txt-product-old-price);
-	margin-bottom: auto;
+	margin-bottom: 10px;
 }
 .price-new {
 	box-sizing: border-box;
@@ -850,6 +851,7 @@
 	color: var(--x-white);
 	padding: 10px 0 10px 10px;
 	transform: translateX(-5px);
+	margin-top: auto;
 }
 .price-new:after {
 	content: "";
@@ -867,10 +869,10 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 110px;
+	max-height: 100%;
 	z-index: 1;
 	background: var(--x-white);
-	padding: 38px 0 0 0;
+	padding: 38px 0 38px 0;
 }
 .product-item:hover .user-menu-hover {
 	display: flex;
@@ -1373,7 +1375,7 @@ button-buy .icon {
 }
 /* ----------catalog.html---------- */
 .header-catalog {
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 }
 /* authorization */
 .red-cart {
@@ -1480,12 +1482,13 @@ button-buy .icon {
 	background: var(--cl-bg-sorting-title);
 }
 .sorting-title {
+	grid-row: 1/2;
+	grid-column: 2/3;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 6px 0px 7px 20px;
-	margin-bottom: 30px;
+	padding: 7px 0 7px 20px;
 }
 .sorting-type-list {
 	flex: 1 1 auto;
@@ -1495,8 +1498,11 @@ button-buy .icon {
 	color: var(--cl-txt-sorting-menu);
 	margin-right: 35px;
 }
-.sorting-type-item:not(:last-child) {
-	margin-right: 65px;
+.sorting-type-item {
+	margin-bottom: 5px;
+}
+.sorting-type-item:not(:first-child) {
+	margin-left: 65px;
 }
 .sorting-underline {
 	border-bottom: 1px dotted var(--cl-brd-sorting-underline);
@@ -1530,23 +1536,23 @@ button-buy .icon {
 .catalog-container {
 	display: grid;
 	grid-template-columns: min-content 1fr;
-	grid-template-rows: auto min-content;
+	grid-template-rows: min-content auto min-content;
 	column-gap: 20px;
+	row-gap: 30px;
 	margin-bottom: 58px;
 }
 .product-item-catalog:not(:nth-child(3n)) {
 	margin-right: 20px;
 }
 .catalog-catalog {
-	grid-row: 1/2;
+	grid-row: 2/3;
 	grid-column: 2/3;
-	margin-bottom: 30px;
 }
 /* -------filter------- */
 .filter {
-	width: 220px;
-	grid-row: 1/2;
+	grid-row: 2/3;
 	grid-column: 1/2;
+	width: 220px;
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: var(--fz-filter-item);
@@ -1554,9 +1560,12 @@ button-buy .icon {
 	color: var(--x-black);
 }
 .filter-header {
+	grid-row: 1/2;
+	grid-column: 1/2;
 	box-sizing: border-box;
-	padding: 8px 0px 10px 20px;
-	margin-bottom: 14px;
+	padding: 0 0 0 20px;
+	display: flex;
+	align-items: center;
 }
 .filter-title {
 	font-weight: 700;
@@ -1572,8 +1581,9 @@ button-buy .icon {
 }
 /* price range */
 .filter-price-range {
-	padding: 13px 0 25px 0;
-	margin-bottom: 6px;
+	padding: 11px 0 25px 0;
+	margin-top: -15px;
+	margin-bottom: 16px;
 }
 .filter-range {
 	box-sizing: border-box;
@@ -1670,15 +1680,18 @@ button-buy .icon {
 }
 /* filter manufacturers */
 .filter-manufacturers-set {
-	padding: 26px 0 30px 0;
-	margin-bottom: 18px;
+	padding: 15px 0 30px 0;
+	margin-bottom: 15px;
 }
 .filter-manufacturer-item:not(:last-child) {
 	margin-bottom: 16px;
 }
 /*checkbox style*/
 .filter-manufacturer-name {
-	padding: 0 0 0 35px;
+	padding: 0 0 0 8px;
+}
+.filter-checkbox {
+	align-self: flex-start;
 }
 .filter-manufacturer-label {
 	display: flex;
@@ -1757,20 +1770,23 @@ button-buy .icon {
 }
 /* -------pagination------- */
 .pagination-list {
-	grid-row: 2/3;
+	grid-row: 3/4;
 	grid-column: 2/3;
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: -10px;
 }
 .pagination-item {
 	border: 1px solid var(--cl-brd-pagination);
 	border-radius: 2px;
+	margin-bottom: 10px;
 }
 .pagination-item:not(:last-child) {
 	padding: 9px 15px 10px 15px;
 	margin-right: 10px;
 }
 .pagination-button {
+	box-sizing: border-box;
 	padding: 10px 15px 10px 15px;
 	width: 140px;
 	text-transform: uppercase;
@@ -1793,7 +1809,7 @@ button-buy .icon {
 /* -------about------- */
 .about-perforator {
 	color: var(--x-black);
-	background: var(--catalog-sec-background);
+	background: var(--cl-bg-information-sec);
 	padding: 65px 0 69px 0;
 }
 .about-perforator .title-section {
