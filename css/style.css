@@ -1275,18 +1275,19 @@ button-buy .icon {
 }
 /* -------feed-back window------- */
 .modal-window {
+	position: relative;
+	z-index: 10;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
 	box-shadow: 0px 4px 20px var(--cl-shadow-modal-window);
 	border-top: 7px solid var(--cl-brd-modal-window);
 	color: var(--x-black);
 	background: var(--x-white);
-	position: relative;
-	z-index: 10;
 }
 .feed-back-window {
 	display: none;
 	position: fixed;
-	bottom: 352px;
-	left: 50%;
 	transform: translateX(-50%);
 	min-width: 460px;
 }
@@ -1361,9 +1362,6 @@ button-buy .icon {
 .map-window {
 	display: none;
 	position: fixed;
-	bottom: 334px;
-	left: 50%;
-	transform: translateX(-50%);
 	width: 940px;
 	height: 449px;
 }
@@ -1820,9 +1818,6 @@ button-buy .icon {
 	display: none;
 	position: fixed;
 	flex-direction: column;
-	left: 50%;
-	top: 167px;
-	transform: translateX(-50%);
 	width: 640px;
 	height: 283px;
 	font-size: var(--fz-cart-text);
