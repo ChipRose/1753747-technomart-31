@@ -1777,17 +1777,21 @@ button-buy .icon {
 .pagination-item {
 	border: 1px solid var(--cl-brd-pagination);
 	border-radius: 2px;
+	padding: 10px 15px 10px 15px;
 	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 .pagination-item:not(:last-child) {
-	padding: 9px 15px 10px 15px;
 	margin-right: 10px;
 }
-.pagination-button {
+.pagination-next {
 	box-sizing: border-box;
-	padding: 10px 15px 10px 15px;
 	width: 140px;
-	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid var(--cl-brd-pagination);
+}
+.pagination-next .button{
+	text-transform: inherit;
 }
 .pagination-item:hover,
 .pagination-item:focus,
