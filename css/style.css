@@ -1291,7 +1291,6 @@ button-buy .icon {
 .feed-back-window {
 	display: none;
 	position: fixed;
-	transform: translateX(-50%);
 	min-width: 460px;
 }
 .close-button {
@@ -1909,6 +1908,9 @@ button-buy .icon {
 	height: 38px;
 	padding: 11px 9px;
 }
+.body-blocked{
+	overflow: hidden;
+}
 /* -------blank.html------- */
 .header-blank {
 	margin-bottom: 50px;
@@ -1953,13 +1955,6 @@ button-buy .icon {
 }
 .checkbox-style .filter-charge-item:last-child {
 	margin-right: 0;
-}
-/* slider js */
-.slider-js .title {
-	flex: 1 1 auto;
-	font-size: var(--fz-adv-title);
-	line-height: var(--lh-adv-title);
-	font-weight: 700;
 }
 .visually-hidden {
 	position: absolute;
