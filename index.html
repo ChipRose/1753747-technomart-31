@@ -223,10 +223,10 @@
 							<input class="visually-hidden slider-bullet first-bullet" type="radio" name="slider-bullet" id="first-slide" checked />
 							<input class="visually-hidden slider-bullet second-bullet" type="radio" name="slider-bullet" id="second-slide" />
 							<div class="slider-controls">
-								<label class="slide-control-bullet first-label" for="first-slide">
+								<label class="slide-control-bullet first-label" tabindex="0" for="first-slide">
 									<span class="visually-hidden">1 слайд: Перфораторы</span>
 								</label>
-								<label class="slide-control-bullet second-label" for="second-slide">
+								<label class="slide-control-bullet second-label" tabindex="0" for="second-slide">
 									<span class="visually-hidden">2 слайд: Дрели</span>
 								</label>
 							</div>
@@ -418,15 +418,9 @@
 						<input class="visually-hidden services-radio guarantee-button-check" type="radio" name="service" id="guarantee" />
 						<input class="visually-hidden services-radio credit-button-check" type="radio" name="service" id="credit" />
 						<div class="service-buttons-list">
-							<label for="delivery" class="service-button-label">
-								<span class="service-button delivery-label" tabindex="0" >Доставка</span>
-							</label>
-							<label for="guarantee" class="service-button-label">
-								<span class="service-button guarantee-label" tabindex="0">Гарантия</span>
-							</label>
-							<label  for="credit" class="service-button-label">
-								<span class="service-button credit-label" tabindex="0">Кредит</span>
-							</label>
+							<label for="delivery" class="service-button-label delivery-label" tabindex="0"> Доставка </label>
+							<label for="guarantee" class="service-button-label guarantee-label" tabindex="0"> Гарантия </label>
+							<label for="credit" class="service-button-label credit-label" tabindex="0"> Кредит </label>
 						</div>
 						<div class="service-item background-delivery">
 							<h3 class="text-clear title-section title-subsection dark-blue">Доставка</h3>
@@ -455,7 +449,6 @@
 							</p>
 							<a class="link-clear button-main" href="blank.html">Отправить заявку</a>
 						</div>
-						<div class="tab-block"></div>
 					</div>
 				</div>
 			</section>

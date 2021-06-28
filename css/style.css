@@ -982,9 +982,6 @@ button-buy .icon {
 .services .title-section {
 	margin-bottom: 25px;
 }
-.services .title-subsection {
-	margin-bottom: 28px;
-}
 .page-text {
 	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
 	font-size: var(--fz-page-text);
@@ -992,6 +989,9 @@ button-buy .icon {
 }
 .page-text-margin {
 	margin-bottom: 69px;
+}
+.services .title-subsection {
+	margin-bottom: 28px;
 }
 .services-container {
 	display: grid;
@@ -1019,6 +1019,16 @@ button-buy .icon {
 .services-item .page-text {
 	max-width: 331px;
 }
+.service-item {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	min-height: 283px;
+	padding: 0 0 0 20px;
+}
+.service-item .button-main {
+	width: 195px;
+}
+/* services radio button */
 .service-buttons-list {
 	grid-row: 1/2;
 	grid-column: 1/2;
@@ -1033,16 +1043,7 @@ button-buy .icon {
 	right: 0;
 	top: -48px;
 }
-.service-item {
-	grid-row: 1/2;
-	grid-column: 2/3;
-	min-height: 283px;
-	padding: 0 0 0 20px;
-}
-.service-item .button-main {
-	width: 195px;
-}
-.service-button{
+.service-button-label {
 	display: block;
 	box-sizing: border-box;
 	width: 240px;
@@ -1051,21 +1052,24 @@ button-buy .icon {
 	background: var(--cl-bg-services-tab);
 	padding: 14px 13.5px 18px 22px;
 }
+.service-button-label:last-child {
+	margin-bottom: 99px;
+}
 .delivery-button-check:checked ~ * .delivery-label,
 .guarantee-button-check:checked ~ * .guarantee-label,
-.credit-button-check:checked ~ * .credit-label{
+.credit-button-check:checked ~ * .credit-label {
 	background: var(--x-white);
 	color: var(--cl-bg-services-tab);
 }
 .delivery-button-check:not(:checked):hover ~ * .delivery-label,
 .guarantee-button-check:not(:checked):hover ~ * .guarantee-label,
-.credit-button-check:not(:checked):hover ~ * .credit-label{
+.credit-button-check:not(:checked):hover ~ * .credit-label {
 	background: var(--cl-bg-services-tab-background-hover);
 }
 /* service checkbox active */
 .guarantee-button-check:checked ~ .background-guarantee,
 .delivery-button-check:checked ~ .background-delivery,
-.credit-button-check:checked ~  .background-credit {
+.credit-button-check:checked ~ .background-credit {
 	display: block;
 }
 /* -------information------- */
