@@ -1719,7 +1719,8 @@ button-buy .icon {
 	fill: var(--cl-fill-filter-checkbox);
 }
 .checkbox-off:hover,
-.checkbox-input:checked:hover + * .checkbox-on {
+.checkbox-input:checked:hover + * .checkbox-on,
+.checkbox-off:focus {
 	fill: var(--cl-fill-filter-checkbox-hover);
 }
 .checkbox-on {
@@ -1744,7 +1745,7 @@ button-buy .icon {
 	position: relative;
 }
 .checkbox-input:focus + .filter-checkbox {
-	box-shadow: -2px 0 0 2px var(--x-white), -2px 0 0 4px var(--x-black);
+	box-shadow: -4px 0 4px 0px var(--x-white), -2px 0 3px 4px var(--x-grey);
 }
 /* radio style */
 .radio-button {
@@ -1781,9 +1782,8 @@ button-buy .icon {
 	background: var(--cl-bg-filter-radio-hover);
 }
 .radio:focus + .radio-button {
-	box-shadow: 0 0 0 2px var(--x-white), 0 0 0 4px var(--x-black);
+	box-shadow: 0 0 4px 2px var(--x-white), 0 0 4px 6px var(--x-grey);
 }
-
 /* filter button */
 .filter-show-button {
 	width: 220px;
