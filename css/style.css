@@ -1491,8 +1491,7 @@ button-buy .icon {
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 7px 0 7px 20px;
+	padding: 10px 0 3px 20px;
 }
 .sorting-type-list {
 	flex: 1 1 auto;
