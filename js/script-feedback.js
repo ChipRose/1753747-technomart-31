@@ -1,31 +1,3 @@
-/* slider buttons */
-const buttonPrev = document.querySelector(".button-prev");
-const buttonNext = document.querySelector(".button-next");
-const slider = document.querySelectorAll(".slider-img");
-const sliderBullets = document.querySelectorAll(".slider-bullet");
-let index = 0;
-buttonNext.addEventListener("click", function () {
-	if (index === slider.length - 1) {
-		sliderBullets[index].checked = false;
-		sliderBullets[0].checked = true;
-		index = 0;
-		return;
-	}
-	sliderBullets[index].checked = false;
-	index++;
-	sliderBullets[index].checked = true;
-});
-buttonPrev.addEventListener("click", function () {
-	if (index === 0) {
-		sliderBullets[0].checked = false;
-		sliderBullets[slider.length - 1].checked = true;
-		index = slider.length - 1;
-		return;
-	}
-	sliderBullets[index].checked = false;
-	index--;
-	sliderBullets[index].checked = true;
-});
 /* feedback modal window */
 const buttonFeedBack = document.querySelector(".button-contacts");
 const body = document.querySelector(".page-body");
@@ -64,12 +36,12 @@ feedBackForm.addEventListener("submit", function (evt) {
 		evt.preventDefault();
 		alert.classList.add("active-block");
 		feedBackWindow.classList.remove("modal-error");
-		feedBackWindow.offsetWidth=feedBackWindow.offsetWidth;
+		feedBackWindow.offsetWidth = feedBackWindow.offsetWidth;
 		feedBackWindow.classList.add("modal-error");
-		feedBackNameInput.addEventListener("focus",function(){
+		feedBackNameInput.addEventListener("focus", function () {
 			alert.classList.remove("active-block");
 		});
-		feedBackEmailInput.addEventListener("focus",function(){
+		feedBackEmailInput.addEventListener("focus", function () {
 			alert.classList.remove("active-block");
 		});
 	} else {
