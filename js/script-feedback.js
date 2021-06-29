@@ -6,20 +6,24 @@ const closeFeedBack = feedBackWindow.querySelector(".close-feedback");
 const feedBackForm = feedBackWindow.querySelector(".feed-back-form");
 const feedBackNameInput = feedBackWindow.querySelector(".name-input");
 const feedBackEmailInput = feedBackWindow.querySelector(".email-input");
+const feedBackTextInput = feedBackWindow.querySelector(".text-area");
 const alert = feedBackWindow.querySelector(".alert");
 let isStorageSupport = true;
-let storage = "";
+let storageName = "";
+let storageEmail = "";
 try {
-	storage = localStorage.getItem("name");
+	storageName = localStorage.getItem("name");
+	storageEmail = localStorage.getItem("email");
 } catch (err) {
 	isStorageSupport = false;
 }
 buttonFeedBack.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedBackWindow.classList.add("active");
-	if (storage) {
-		feedBackNameInput.value = storage;
-		feedBackEmailInput.focus();
+	if (storageName || storageEmail) {
+		feedBackNameInput.value = storageName;
+		feedBackEmailInput.value = storageEmail;
+		feedBackTextInput.focus();
 	} else {
 		feedBackNameInput.focus();
 	}
@@ -47,6 +51,7 @@ feedBackForm.addEventListener("submit", function (evt) {
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("name", feedBackNameInput.value);
+			localStorage.setItem("email", feedBackEmailInput.value);
 		}
 	}
 });
