@@ -1704,47 +1704,47 @@ button-buy .icon {
 }
 /*checkbox style*/
 .filter-manufacturer-name {
-	padding: 0 0 0 8px;
+	padding: 0 0 0 10px;
 }
-.filter-checkbox {
-	align-self: flex-start;
+.filter-check {
+	box-sizing: border-box;
+	width: 23px;
+	height: 23px;
+	border: 2px solid var(--cl-fill-filter-checkbox);
+	border-radius: 4px;
 }
 .filter-manufacturer-label {
 	display: flex;
 	align-items: center;
 }
-.checkbox-off {
-	position: relative;
-	fill: var(--cl-fill-filter-checkbox);
+.filter-check:hover{
+	border-color: var(--cl-fill-filter-checkbox-hover);
 }
-.checkbox-off:hover,
 .checkbox-input:checked:hover + * .checkbox-on,
 .checkbox-off:focus {
 	fill: var(--cl-fill-filter-checkbox-hover);
 }
-.checkbox-on {
-	fill: none;
-}
-.checkbox-input:checked + * .checkbox-off {
+.checkbox-on,
+.checkbox-on-outline {
 	fill: none;
 }
 .checkbox-input:checked + * .checkbox-on {
 	fill: var(--cl-fill-filter-checkbox);
 }
-.checkbox-input:disabled + * .checkbox-off {
-	fill: var(--cl-fill-filter-checkbox-disabled);
+.checkbox-input:checked + * .checkbox-on-outline {
+	fill: var(--x-white);
 }
-.checkbox-input:checked:disabled + * .checkbox-off {
-	fill: none;
+.checkbox-input:disabled + * .filter-check {
+	border-color: var(--cl-fill-filter-checkbox-disabled);
 }
 .checkbox-input:checked:disabled + * .checkbox-on {
 	fill: var(--cl-fill-filter-checkbox-disabled);
 }
-.filter-checkbox {
-	position: relative;
+.checkbox-input:checked:disabled + * .checkbox-on-outline {
+	fill: var(--x-white);
 }
-.checkbox-input:focus + .filter-checkbox {
-	box-shadow: -4px 0 4px 0px var(--x-white), -2px 0 3px 4px var(--x-grey);
+.checkbox-input:focus + .filter-check {
+	box-shadow: 0 0 3px 2px var(--x-white), 0 0 3px 4px var(--x-grey);
 }
 /* radio style */
 .radio-button {
@@ -1781,7 +1781,7 @@ button-buy .icon {
 	background: var(--cl-bg-filter-radio-hover);
 }
 .radio:focus + .radio-button {
-	box-shadow: 0 0 4px 2px var(--x-white), 0 0 4px 6px var(--x-grey);
+	box-shadow: 0 0 3px 2px var(--x-white), 0 0 3px 4px var(--x-grey);
 }
 /* filter button */
 .filter-show-button {
@@ -1908,7 +1908,7 @@ button-buy .icon {
 	height: 38px;
 	padding: 11px 9px;
 }
-.body-blocked{
+.body-blocked {
 	overflow: hidden;
 }
 /* -------blank.html------- */
