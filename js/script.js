@@ -56,24 +56,35 @@ buttonFeedBack.addEventListener("click", function (evt) {
 closeFeedBack.addEventListener("click", function () {
 	feedBackWindow.classList.remove("active");
 	body.classList.remove("body-blocked");
+	feedBackWindow.classList.remove("modal-error");
+	alert.classList.remove("active-block");
 });
- feedBackForm.addEventListener("submit", function (evt) {
+feedBackForm.addEventListener("submit", function (evt) {
 	if (!feedBackNameInput.value || !feedBackEmailInput.value) {
 		evt.preventDefault();
 		alert.classList.add("active-block");
+		feedBackWindow.classList.remove("modal-error");
+		feedBackWindow.offsetWidth=feedBackWindow.offsetWidth;
+		feedBackWindow.classList.add("modal-error");
+		feedBackNameInput.addEventListener("focus",function(){
+			alert.classList.remove("active-block");
+		});
+		feedBackEmailInput.addEventListener("focus",function(){
+			alert.classList.remove("active-block");
+		});
 	} else {
-		alert.classList.remove("active-block");
 		if (isStorageSupport) {
 			localStorage.setItem("name", feedBackNameInput.value);
 		}
 	}
 });
-window.addEventListener("keydown",function(evt){
-	if(evt.code==="Escape"){
-		if(feedBackWindow.classList.contains("active")){
+window.addEventListener("keydown", function (evt) {
+	if (evt.code === "Escape") {
+		if (feedBackWindow.classList.contains("active")) {
 			evt.preventDefault();
 			feedBackWindow.classList.remove("active");
 			body.classList.remove("body-blocked");
+			feedBackWindow.classList.remove("modal-error");
 		}
 	}
 });

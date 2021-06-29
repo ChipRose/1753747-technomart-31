@@ -1945,9 +1945,6 @@ button-buy .icon {
 .css-button-element {
 	margin: 0 auto;
 }
-.slider-js {
-	margin-bottom: 20px;
-}
 /* svg checkbox */
 .checkbox-style {
 	color: var(--x-black);
@@ -1989,9 +1986,49 @@ button-buy .icon {
 	clip-path: inset(100%);
 	overflow: hidden;
 }
+/* -------Animation------- */
+/* Modal window appearance */
+@keyframes moving-down{
+	0%{
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -100%);
+	}
+	100%{
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+/* Error shake */
+@keyframes shake {
+  0%,
+  100% {
+		top: 50%;
+		left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-55%,-50%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-45%,-50%);
+  }
+}
+/* classes for JS */
 .active {
 	display: flex;
+	animation: moving-down 1s;
 }
 .active-block{
 	display: block;
+}
+.modal-error{
+	animation: shake 1s;
 }
