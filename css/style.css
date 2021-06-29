@@ -1292,9 +1292,11 @@ button-buy .icon {
 	display: none;
 	position: fixed;
 	min-width: 460px;
+	min-height: 430px;
 }
-.close-button {
+.close-feedback {
 	position: absolute;
+	z-index: 11;
 	top: 14px;
 	right: 11px;
 }
@@ -1303,6 +1305,8 @@ button-buy .icon {
 	flex-direction: column;
 }
 .feed-back-fields {
+	position: relative;
+	flex:1 1 auto;
 	display: flex;
 	flex-direction: column;
 	padding: 26px 80px 0 80px;
@@ -1350,6 +1354,19 @@ button-buy .icon {
 	font-size: var(--fz-page-text);
 	line-height: var(--lh-page-text);
 	color: var(--cl-txt-modal-form-placeholder);
+}
+.text-area{
+	flex: 0 0 auto;
+	margin-bottom: 37px;
+}
+.alert{
+	display: none;
+	position: absolute;
+	flex: 1 1 auto;
+	color: var(--x-red);
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .feed-back-label {
 	margin-bottom: 11px;
@@ -1974,4 +1991,7 @@ button-buy .icon {
 }
 .active {
 	display: flex;
+}
+.active-block{
+	display: block;
 }
