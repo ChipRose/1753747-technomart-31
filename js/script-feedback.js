@@ -7,6 +7,7 @@ const feedBackForm = feedBackWindow.querySelector(".feed-back-form");
 const feedBackNameInput = feedBackWindow.querySelector(".name-input");
 const feedBackEmailInput = feedBackWindow.querySelector(".email-input");
 const feedBackTextInput = feedBackWindow.querySelector(".text-area");
+const feedBackSubmit = feedBackForm.querySelector(".feed-back-submit");
 const alert = feedBackWindow.querySelector(".alert");
 let isStorageSupport = true;
 let storageName = "";
@@ -20,20 +21,21 @@ try {
 buttonFeedBack.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedBackWindow.classList.add("active");
-	if (storageName || storageEmail) {
+	feedBackWindow.classList.add("active-animation");
+	feedBackNameInput.focus();
+	if (storageName) {
 		feedBackNameInput.value = storageName;
-		feedBackEmailInput.value = storageEmail;
-		feedBackTextInput.focus();
+		feedBackEmailInput.focus();
 	} else {
 		feedBackNameInput.focus();
 	}
+	if (storageEmail) {
+		feedBackEmailInput.value = storageEmail;
+		feedBackTextInput.focus();
+	} else {
+		feedBacEmailInput.focus();
+	}
 	body.classList.add("body-blocked");
-});
-closeFeedBack.addEventListener("click", function () {
-	feedBackWindow.classList.remove("active");
-	body.classList.remove("body-blocked");
-	feedBackWindow.classList.remove("modal-error");
-	alert.classList.remove("active-block");
 });
 feedBackForm.addEventListener("submit", function (evt) {
 	if (!feedBackNameInput.value || !feedBackEmailInput.value) {
@@ -55,11 +57,22 @@ feedBackForm.addEventListener("submit", function (evt) {
 		}
 	}
 });
+feedBackSubmit.addEventListener("blur", function () {
+	feedBackNameInput.focus();
+});
+closeFeedBack.addEventListener("click", function () {
+	feedBackWindow.classList.remove("active");
+	feedBackWindow.classList.remove("active-animation");
+	body.classList.remove("body-blocked");
+	feedBackWindow.classList.remove("modal-error");
+	alert.classList.remove("active-block");
+});
 window.addEventListener("keydown", function (evt) {
 	if (evt.code === "Escape") {
 		if (feedBackWindow.classList.contains("active")) {
 			evt.preventDefault();
 			feedBackWindow.classList.remove("active");
+			feedBackWindow.classList.remove("active-animation");
 			body.classList.remove("body-blocked");
 			feedBackWindow.classList.remove("modal-error");
 		}
