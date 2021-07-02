@@ -1288,17 +1288,17 @@ button-buy .icon {
 	color: var(--x-black);
 	background: var(--x-white);
 }
+.close-button {
+	position: absolute;
+	z-index: 11;
+	top: 11px;
+	right: 11px;
+}
 .feed-back-window {
 	display: none;
 	position: fixed;
 	min-width: 460px;
 	min-height: 430px;
-}
-.close-feedback {
-	position: absolute;
-	z-index: 11;
-	top: 14px;
-	right: 11px;
 }
 .feed-back-form {
 	display: flex;
@@ -1306,7 +1306,7 @@ button-buy .icon {
 }
 .feed-back-fields {
 	position: relative;
-	flex:1 1 auto;
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
 	padding: 26px 80px 0 80px;
@@ -1355,11 +1355,11 @@ button-buy .icon {
 	line-height: var(--lh-page-text);
 	color: var(--cl-txt-modal-form-placeholder);
 }
-.text-area{
+.text-area {
 	flex: 0 0 auto;
 	margin-bottom: 37px;
 }
-.alert{
+.alert {
 	display: none;
 	position: absolute;
 	flex: 1 1 auto;
@@ -1383,13 +1383,19 @@ button-buy .icon {
 	display: none;
 	position: fixed;
 	width: 940px;
-	height: 449px;
+	min-height: 449px;
 }
 .map-iframe {
 	border: none;
 }
 .close-icon {
 	fill: var(--cl-fill-button);
+}
+.close-map {
+	position: absolute;
+	z-index: 11;
+	top: 14px;
+	right: 11px;
 }
 /* ----------catalog.html---------- */
 .header-catalog {
@@ -1508,7 +1514,7 @@ button-buy .icon {
 	display: flex;
 	justify-content: space-between;
 }
-.sorting-title{
+.sorting-title {
 	padding: 10px 0 3px 20px;
 }
 .sorting-type-list {
@@ -1738,7 +1744,7 @@ button-buy .icon {
 	display: flex;
 	align-items: center;
 }
-.filter-check:hover{
+.filter-check:hover {
 	border-color: var(--cl-fill-filter-checkbox-hover);
 }
 .checkbox-input:checked:hover + * .checkbox-on,
@@ -1988,47 +1994,49 @@ button-buy .icon {
 }
 /* -------Animation------- */
 /* Modal window appearance */
-@keyframes moving-down{
-	0%{
+@keyframes moving-down {
+	0% {
 		top: 0;
 		left: 50%;
 		transform: translate(-50%, -100%);
 	}
-	100%{
+	100% {
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
 }
 /* Error shake */
 @keyframes shake {
-  0%,
-  100% {
+	0%,
+	100% {
 		top: 50%;
 		left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-55%,-50%);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(-45%,-50%);
-  }
+		transform: translate(-50%, -50%);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate(-55%, -50%);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate(-45%, -50%);
+	}
 }
 /* classes for JS */
 .active {
 	display: flex;
+}
+.active-animation{
 	animation: moving-down 1s;
 }
-.active-block{
+.active-block {
 	display: block;
 }
-.modal-error{
+.modal-error {
 	animation: shake 1s;
 }
