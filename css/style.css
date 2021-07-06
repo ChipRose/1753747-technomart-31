@@ -1675,17 +1675,17 @@ button-buy .icon {
 	right: 0;
 }
 /* arrows slider delete */
+.number-input-clear::-webkit-outer-spin-button,
+.number-input-clear::-webkit-inner-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
 .number-input-clear {
 	-moz-appearance: textfield;
 }
 .number-input-clear:hover,
 .number-input-clear:focus {
 	-moz-appearance: number-input;
-}
-.number-input-clear::-webkit-outer-spin-button,
-.number-input-clear::-webkit-inner-spin-button {
-	margin: 0;
-	-webkit-appearance: none;
 }
 /* price input */
 .filter-price {
