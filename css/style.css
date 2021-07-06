@@ -1684,8 +1684,8 @@ button-buy .icon {
 }
 .number-input-clear::-webkit-outer-spin-button,
 .number-input-clear::-webkit-inner-spin-button {
-	-webkit-appearance: none;
 	margin: 0;
+	-webkit-appearance: none;
 }
 /* price input */
 .filter-price {
