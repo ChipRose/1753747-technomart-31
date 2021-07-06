@@ -12,7 +12,7 @@ for (let buyButton of cart) {
 		orderedButton.focus();
 		body.classList.add("body-blocked");
 	});
-}
+};
 cartButtonContinue.addEventListener("blur", function () {
 	orderedButton.focus();
 });
