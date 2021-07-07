@@ -612,11 +612,12 @@
 .advertisement-list {
 	display: grid;
 	grid-template-columns: repeat(12, 60px);
-	grid-template-rows: repeat(3, 123px);
+	grid-template-rows: repeat(3, auto);
 	gap: 20px;
 }
 .advertisement-item {
 	display: grid;
+	min-height: 123px;
 	grid-template-columns: 1fr 142px;
 	position: relative;
 	overflow: hidden;
@@ -625,7 +626,7 @@
 	grid-column: 1/2;
 	display: flex;
 	flex-direction: column;
-	padding: 21px 0px 21px 23px;
+	padding: 21px 0 21px 23px;
 }
 .advertisement-icon {
 	grid-column: 2/3;
@@ -634,7 +635,6 @@
 	align-items: center;
 }
 .advertisement .title {
-	flex: 1 1 auto;
 	font-size: var(--fz-adv-title);
 	line-height: var(--lh-adv-title);
 	font-weight: 700;
@@ -678,6 +678,7 @@
 	text-align: center;
 	background: var(--cl-bg-adv-button);
 	padding: 10px;
+	margin-top: 12px;
 }
 .advertisement-button:hover,
 .advertisement-button:focus {
@@ -692,6 +693,11 @@
 	position: relative;
 	background: var(--x-white);
 }
+.slider-img .img{
+	display: block;
+	min-width: 100%;
+	min-height: 100%;
+	}
 .slider-title {
 	text-transform: uppercase;
 	font-size: var(--fz-adv-slider-title);
@@ -722,7 +728,7 @@
 	position: absolute;
 	z-index: 10;
 	width: 192px;
-	bottom: 33px;
+	bottom: 26px;
 	left: 24px;
 }
 .slider-controls {

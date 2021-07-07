@@ -6,7 +6,8 @@ const closeCart = cartWindow.querySelector(".close-cart");
 const cartButtonContinue = cartWindow.querySelector(".cart-button");
 const orderedButton = cartWindow.querySelector(".ordered-cart-button");
 for (let buyButton of cart) {
-	buyButton.addEventListener("click", function () {
+	buyButton.addEventListener("click", function (evt) {
+		evt.preventDefault();
 		cartWindow.classList.add("active");
 		cartWindow.classList.add("active-animation");
 		orderedButton.focus();
