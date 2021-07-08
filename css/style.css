@@ -381,6 +381,7 @@
 }
 .search-field::placeholder {
 	color: var(--x-white);
+	opacity: 1;
 }
 .search-field:focus + * .search-icon {
 	fill: var(--x-red);
@@ -390,6 +391,7 @@
 }
 .search-field:focus::placeholder {
 	color: var(--x-black);
+	opacity: 1;
 }
 .search-field:focus {
 	outline: 0;
@@ -1713,6 +1715,7 @@
 .filter-price-input::placeholder {
 	font-size: var(--fz-filter-input);
 	line-height: var(--lh-filter-input);
+	opacity: 1;
 }
 /* filter charger */
 .filter-charge-set {
