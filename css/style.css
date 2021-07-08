@@ -693,11 +693,11 @@
 	position: relative;
 	background: var(--x-white);
 }
-.slider-img .img{
+.slider-img .img {
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
-	}
+}
 .slider-title {
 	text-transform: uppercase;
 	font-size: var(--fz-adv-slider-title);
@@ -883,7 +883,7 @@
 	padding: 38px 0 38px 0;
 }
 .product-item:hover .user-menu-hover,
-.product-item:focus-within .user-menu-hover{
+.product-item:focus-within .user-menu-hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
