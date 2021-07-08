@@ -1497,16 +1497,16 @@
 	opacity: 0.3;
 }
 .bread-item {
+	padding: 0 25px 0 0;
+	margin-right: 15px;
 	margin-bottom: 5px;
-	margin-right: 41px;
 }
 .bread-item:last-child {
+	padding: 0 0 0 0;
 	margin-right: 0;
 }
-.bread-item:not(:last-child):after {
-	content: url("../img/icon/icon-right-small-arrow.svg");
-	position: absolute;
-	transform: translate(17px, 2px);
+.bread-item:not(:last-child) {
+	background: url("../img/icon/icon-right-small-arrow.svg") right center no-repeat;
 }
 .bread-link:hover,
 .bread-link:focus {
