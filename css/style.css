@@ -334,7 +334,7 @@
 	align-items: center;
 }
 .top-logo-link {
-	padding: 12px 56px 5px 56px;
+	padding: 8px 56px 8px 56px;
 }
 .logo:hover,
 .logo:focus {
@@ -489,10 +489,12 @@
 	padding: 5px 10px 8px 35px;
 	margin-bottom: 1px;
 }
-.header-phone:hover .icon-phone {
+.header-phone:hover .icon-phone,
+.header-phone:focus .icon-phone {
 	fill: var(--x-red);
 }
-.header-phone:hover {
+.header-phone:hover,
+.header-phone:focus {
 	color: var(--x-black);
 }
 /* address */
@@ -560,8 +562,8 @@
 	padding: 16px 28px 10px 28px;
 	margin-bottom: 10px;
 }
-.navigation-item:hover,
-.navigation-item:focus {
+.navigation-link:hover,
+.navigation-link:focus {
 	background: var(--cl-bg-navigation-menu-item-hover);
 }
 .navigation-item:active {
@@ -972,8 +974,8 @@
 .manufacturer-item:nth-child(4n) {
 	margin-right: 0;
 }
-.manufacturer-item:hover,
-.manufacturer-item:focus {
+.manufacturer-link:hover,
+.manufacturer-link:focus {
 	box-shadow: 0px 4px 20px var(--cl-shadow-manufacturer-card);
 }
 .manufacturer-item:active {
@@ -1201,8 +1203,8 @@
 .yellow {
 	color: var(--cl-txt-footer-second-menu);
 }
-.footer-item-navigation:hover,
-.footer-item-navigation:focus,
+.footer-link:hover,
+.footer-link:focus,
 .footer-item-list:hover,
 .footer-item-list:focus,
 .footer-tel:hover,
@@ -1253,6 +1255,7 @@
 	height: 40px;
 	background: var(--cl-bg-footer-bottom-social);
 	border-radius: 50%;
+	overflow: hidden;
 }
 .social-link {
 	display: flex;
@@ -1268,9 +1271,9 @@
 .social-button:last-child {
 	margin-right: 0;
 }
-.social-button:hover,
-.social-button:focus,
-.social-button:active {
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
 	background: var(--cl-bg-footer-bottom-social-hover-active);
 }
 .social-icon {
@@ -1428,9 +1431,9 @@
 	fill: var(--cl-fill-auth-icon);
 }
 .personal-data:hover,
-.personal-data:focus,
+.authorization-link:focus .personal-data,
 .log-out:hover,
-.log-out:focus {
+.log-out-link:focus .log-out {
 	fill: var(--cl-fill-auth-icon-hover);
 }
 .personal-data:active,
@@ -1466,8 +1469,8 @@
 	position: absolute;
 	transform: translate(14px, -2px);
 }
-.authorization-item:hover,
-.authorization-item:focus {
+.authorization-link:hover,
+.authorization-link:focus {
 	color: var(--cl-txt-auth-item-hover);
 }
 .authorization-item:active {
@@ -1489,7 +1492,8 @@
 .bread-home-icon {
 	fill: var(--cl-fill-bread-home-icon);
 }
-.bread-home-icon:hover {
+.bread-home-icon:hover,
+.bread-home-icon:focus {
 	opacity: 0.3;
 }
 .bread-item {
@@ -1504,8 +1508,8 @@
 	position: absolute;
 	transform: translate(17px, 2px);
 }
-.bread-item:hover,
-.bread-item:hover {
+.bread-link:hover,
+.bread-link:focus {
 	opacity: 0.3;
 }
 .catalog-title {
@@ -1756,11 +1760,12 @@
 	display: flex;
 	align-items: center;
 }
-.filter-check:hover {
+.filter-check:hover,
+.checkbox-input:focus + .filter-check {
 	border-color: var(--cl-fill-filter-checkbox-hover);
 }
 .checkbox-input:checked:hover + * .checkbox-on,
-.checkbox-off:focus {
+.checkbox-input:checked:focus + * .checkbox-on {
 	fill: var(--cl-fill-filter-checkbox-hover);
 }
 .checkbox-input:hover + .filter-check {
@@ -1806,20 +1811,19 @@
 	height: 9px;
 	border-radius: 50%;
 }
-.radio:hover + .radio-button {
+.radio:hover + .radio-button,
+.radio:focus + .radio-button {
 	border-color: var(--cl-bg-filter-radio-hover);
 }
 .radio:disabled + .radio-button {
 	border-color: var(--cl-bg-filter-radio-disabled);
 }
-.radio:hover + * .radio-inner {
-	background: var(--cl-fill-filter-checkbox-hover);
-}
 .radio:checked + * .radio-inner {
 	opacity: 1;
 	background: var(--cl-bg-filter-radio);
 }
-.radio:checked:hover + * .radio-inner {
+.radio:checked:hover + * .radio-inner,
+.radio:checked:focus + * .radio-inner {
 	background: var(--cl-bg-filter-radio-hover);
 }
 .radio:focus + .radio-button {
@@ -1846,10 +1850,9 @@
 .pagination-item {
 	border: 1px solid var(--cl-brd-pagination);
 	border-radius: 2px;
-	padding: 10px 15px 10px 15px;
-	margin-bottom: 10px;
 	text-transform: uppercase;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 .pagination-item:last-child {
 	margin-right: 0;
@@ -1862,6 +1865,11 @@
 }
 .pagination-next .button {
 	text-transform: inherit;
+	padding: 10px 15px 10px 15px;
+}
+.pagination-link {
+	display: block;
+	padding: 10px 15px 10px 15px;
 }
 .pagination-item:hover,
 .pagination-item:focus,
