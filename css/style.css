@@ -1763,6 +1763,9 @@
 .checkbox-off:focus {
 	fill: var(--cl-fill-filter-checkbox-hover);
 }
+.checkbox-input:hover + .filter-check {
+	border-color: var(--cl-fill-filter-checkbox-hover);
+}
 .checkbox-on,
 .checkbox-on-outline {
 	fill: none;
