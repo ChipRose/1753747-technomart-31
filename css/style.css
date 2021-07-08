@@ -813,6 +813,7 @@
 	margin-right: 0;
 }
 .product-item:hover,
+.product-item:focus,
 .product-item:active {
 	box-shadow: 0px 4px 20px var(--cl-shadow-product-item-hover);
 }
@@ -875,16 +876,20 @@
 	display: none;
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 99%;
 	max-height: 100%;
 	z-index: 1;
 	background: var(--x-white);
 	padding: 38px 0 38px 0;
 }
-.product-item:hover .user-menu-hover {
+.product-item:hover .user-menu-hover,
+.product-item:focus .user-menu-hover{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.user-menu-hover:focus{
+	outline: 1px solid red;
 }
 /* product user menu buttons */
 .button-buy .icon {
