@@ -1421,7 +1421,7 @@
 	padding: 14px 14px 9px 15px;
 	margin-bottom: 9px;
 }
-.authorization-field:active {
+.authorization-name:active {
 	color: var(--cl-txt-auth-active);
 }
 .authorization-icon {
