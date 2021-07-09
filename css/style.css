@@ -444,7 +444,7 @@
 }
 /* header middle */
 .header-middle {
-	padding: 44px 0 41px 0;
+	padding: 44px 0 40px 0;
 }
 .header-middle .wrapper {
 	display: grid;
@@ -1424,28 +1424,32 @@
 	padding: 14px 14px 9px 15px;
 	margin-bottom: 9px;
 }
-.authorization-name:active {
-	color: var(--cl-txt-auth-active);
-}
 .authorization-icon {
 	fill: var(--cl-fill-auth-icon);
 }
-.personal-data:hover,
-.authorization-link:focus .personal-data,
-.log-out:hover,
-.log-out-link:focus .log-out {
-	fill: var(--cl-fill-auth-icon-hover);
-}
-.personal-data:active,
-.log-out:active {
-	fill: var(--cl-fill-auth-icon-active);
+.personal-data {
+	margin-right: 19px;
 }
 .authorization-name {
 	font-size: var(--fz-authorization-name);
 	line-height: var(--lh-authorization-name);
 }
-.authorization-name:active {
+.authorization-data:hover .personal-data,
+.authorization-data:focus .personal-data {
+	fill: var(--cl-fill-auth-icon-hover);
+}
+.authorization-data:active {
 	color: var(--cl-txt-auth-name-active);
+}
+.authorization-data:active .personal-data {
+	fill: var(--cl-fill-auth-icon-active);
+}
+.log-out-link:hover .log-out,
+.log-out-link:focus .log-out {
+	fill: var(--cl-fill-auth-icon-hover);
+}
+.log-out-link:active .log-out {
+	fill: var(--cl-fill-auth-icon-active);
 }
 .authorization-list {
 	display: flex;
@@ -1473,7 +1477,7 @@
 .authorization-link:focus {
 	color: var(--cl-txt-auth-item-hover);
 }
-.authorization-item:active {
+.authorization-link:active {
 	color: var(--cl-txt-auth-active);
 }
 /* -------bread crumbs------- */
