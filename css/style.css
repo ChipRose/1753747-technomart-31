@@ -172,6 +172,7 @@
 	--cl-bg-modal-feed-back-footer: var(--x-extra-light-beige);
 	/* color compare for catalog.html */
 	--cl-txt-auth-item: var(--x-middle-blue);
+	--cl-txt-address: var(--x-middle-blue);
 	--cl-txt-auth-item-hover: var(--x-red);
 	--cl-txt-auth-active: var(--x-extra-light-grey);
 	--cl-fill-auth-icon-active: var(--x-extra-light-grey);
@@ -502,6 +503,7 @@
 	align-self: flex-start;
 	font-size: var(--fz-header-addresss);
 	line-height: var(--lh-header-addresss);
+	color:var(--cl-txt-address);
 	text-align: left;
 	padding: 0 0 0 5px;
 }
