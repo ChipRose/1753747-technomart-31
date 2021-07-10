@@ -1207,13 +1207,11 @@
 }
 .footer-link:hover,
 .footer-link:focus,
-.footer-item-list:hover,
-.footer-item-list:focus,
 .footer-tel:hover,
 .footer-tel:focus {
 	text-decoration: underline;
 }
-.footer-item:active,
+.footer-link:active,
 .footer-tel:active {
 	opacity: 0.5;
 	text-decoration: none;
